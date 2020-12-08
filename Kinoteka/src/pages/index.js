@@ -1,10 +1,10 @@
 import React from "react"
 
+import NavigationBar from '../components/NavigationBar'
+
 const LandingPage = () => (
   <main>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>This is were we will add content</p>
+   <NavigationBar />
   </main>
 )
 

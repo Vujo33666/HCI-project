@@ -1,0 +1,16 @@
+.navigationBar {
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navigationBar li {
+    padding: 14px 15px;
+    list-style: none;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #555
+  }
