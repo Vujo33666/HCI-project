@@ -4,7 +4,7 @@ import NavigationBar from '../components/NavigationBar'
 
 const LandingPage = () => (
   <main>
-   <NavigationBar />
+   <NavigationBar activeTab = ''/>
   </main>
 )
 

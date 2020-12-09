@@ -1,16 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 .navigationBar {
-    position: absolute;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-  }
+  width: 500px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
   
-  .navigationBar li {
-    padding: 14px 15px;
-    list-style: none;
-    width: fit-content;
-    font-size: 14px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #555
-  }
+.navigationBar li {
+  list-style: none;
+  width: 100px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+  font-size: 16px;
+  font-family: "Righteous";
+  text-transform: uppercase;
+  color: rgba(212, 175, 55);
+
+  padding: 5px;
+}
+
+.navigationBar li:hover {
+  border-bottom: 2px solid rgba(212, 175, 55);
+  cursor: pointer;
+}
+
+.navigationBar .active {
+  color: black;
+  background: rgba(212, 175, 55);
+  border-radius: 5px;
+}
