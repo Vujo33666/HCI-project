@@ -1,10 +1,10 @@
 import React from "react"
 
-import NavigationBar from '../components/NavigationBar'
+import Navigation from '../components/Navigation'
 
 const LandingPage = () => (
   <main>
-   <NavigationBar activeTab = ''/>
+   <Navigation activeTab = ''/>
   </main>
 )
 
