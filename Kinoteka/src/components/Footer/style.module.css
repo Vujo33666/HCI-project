@@ -1,0 +1,62 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgba(0,0,0);
+
+    width: 96%;
+    height: 100px;
+}
+
+.footer .aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+
+    width: max-content;
+}
+
+.footer .aboutText li {
+    list-style: none;
+      
+    font-size: 12px;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255);
+  }
+
+.footer .verticalLine {
+    height: 90%;
+    width: 5px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.footer .logo {
+    height: 90px;
+    width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer .logo li {
+    list-style: none;
+      
+    font-size: 12px;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255);
+}
