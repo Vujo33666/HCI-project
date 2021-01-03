@@ -11,7 +11,7 @@
 .navigationBar li {
   list-style: none;
   width: 100px;
-  height: 20px;
+  height: 30px;
 
   display: flex;
   align-items: center;
@@ -26,12 +26,14 @@
 }
 
 .navigationBar li:hover {
-  border-bottom: 2px solid rgba(212, 175, 55);
+  color: rgba(0,0,0,0.8);
+  background: rgba(212, 175, 55, 0.5);
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.navigationBar .active {
-  color: black;
-  background: rgba(212, 175, 55);
+.navigationBar li.active {
+  color: rgba(0,0,0,0.8);
+  background: rgba(212, 175, 55, 0.8);
   border-radius: 5px;
 }

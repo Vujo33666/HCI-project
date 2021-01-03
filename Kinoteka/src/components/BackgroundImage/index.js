@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import styles from './style.module.css'
 
 const Background = () => {
     const data = useStaticQuery(graphql`
@@ -17,7 +18,7 @@ const Background = () => {
     `)
     
     return (
-        <div class style={{maxWidth: "1920px", minWidth: "500px"}}> 
+        <div className={styles.background}>
             <Img fluid={data.myImage.childImageSharp.fluid} />
         </div>
     )

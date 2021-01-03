@@ -1,0 +1,1 @@
+export const navs = ['Naslovna', 'Kategorije', 'Forum', 'Prijava']
