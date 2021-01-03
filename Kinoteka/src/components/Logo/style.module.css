@@ -1,0 +1,79 @@
+.logo {
+    /* Logo */
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+ 
+
+.logo .logoInside {
+    /* Rectangle 1 */
+    position: absolute;
+    left: 67%;
+    right: 13%;
+    top: 35%;
+    bottom: 35%;
+    background: rgba(212, 175, 55, 0.8);
+
+    /* Line 5 (Stroke) */
+    position: absolute;
+    left: 64%;
+    right: 6%;
+    top: 35%;
+    bottom: 59%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(90deg);
+
+    /* Line 4 (Stroke) */
+    position: absolute;
+    left: 57%;
+    right: 23%;
+    top: 40%;
+    bottom: 54%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(90deg);
+
+    /* Line 3 (Stroke) */
+    position: absolute;
+    left: 50%;
+    right: 20%;
+    top: 35%;
+    bottom: 59%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(90deg);
+
+    /* Line 2 (Stroke) */
+    position: absolute;
+    left: 41%;
+    right: 29%;
+    top: 35%;
+    bottom: 59%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(90deg);
+
+    /* Polygon 1 */
+    position: absolute;
+    left: 20.31%;
+    right: 49.04%;
+    top: 65.32%;
+    bottom: 22.99%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(-90deg);
+
+    /* Line 1 (Stroke) */
+    position: absolute;
+    left: 19%;
+    right: 51%;
+    top: 35%;
+    bottom: 59%;
+    background: rgba(212, 175, 55, 0.8);
+    transform: rotate(90deg);
+
+    /* Ellipse 1 (Stroke) */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: rgba(212, 175, 55, 0.8);
+}
