@@ -2,11 +2,12 @@ import React from "react"
 
 import styles from './style.module.css'
 import MovieCardRow from '../../components/MovieCardRow'
-import MovieCard from "../../components/MovieCard"
+import MovieCardDropDown from "../../components/MovieCardDropDown"
 
 const MovieCardRowExpanded = () => (
-    <div className={styles.row}>
+    <div className={styles.pool}>
         <MovieCardRow />
+        <MovieCardDropDown />
     </div>
 )
 

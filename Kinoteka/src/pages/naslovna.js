@@ -6,6 +6,7 @@ import MovieCardRowExpanded from "../modules/MovieCardRowExpanded"
 const NaslovnaPage = () => (
     <HeaderFooterLayout activeTab="Naslovna">
         <MovieCardRowExpanded />
+        <MovieCardRowExpanded />
     </HeaderFooterLayout>
 )
  
