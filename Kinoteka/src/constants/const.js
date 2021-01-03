@@ -8,5 +8,5 @@ export const buttons = [
     {btn: 'watchLater'},
     {btn: 'addToFavourites'},
     {btn: 'dropDown'},
-    {btn: 'readMore',
+    {btn: 'readMore'},
 ]
