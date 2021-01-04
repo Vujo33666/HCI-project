@@ -1,12 +1,12 @@
 .card {
     width: 150px;
-    height: 200px;
+    height: 220px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    background: rgba(212, 175, 55, 0.5);;
+    background: rgba(66, 177, 177, 0.1);;
 }
 
 .card li {

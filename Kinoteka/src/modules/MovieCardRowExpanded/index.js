@@ -5,7 +5,7 @@ import MovieCardRow from '../../components/MovieCardRow'
 import MovieCardDropDown from "../../components/MovieCardDropDown"
 import Quote from '../../components/Quote'
 
-const MovieCardRowExpanded = () => {
+const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
     const [isActive, setValue] = useState(true);
 
     return (
@@ -16,7 +16,10 @@ const MovieCardRowExpanded = () => {
             <MovieCardRow   onMouseOver={() => setValue(false)}
                             onMouseLeave={() => setValue(true)}
             />
-            <Quote active = {isActive}/>
+            <Quote  active = {isActive}
+                    quoteText = {quoteText}
+                    quoteBy = {quoteBy}
+            />
             <MovieCardDropDown active = {!isActive}/>
         </div>
     )
