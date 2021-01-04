@@ -8,3 +8,18 @@
 
     justify-content: space-evenly;
 }
+
+.pool button {
+    list-style: none;
+
+    width: 100px;
+    height: 30px;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    border-radius: 5px;
+
+    background: rgba(212, 175, 55, 0.8);
+}

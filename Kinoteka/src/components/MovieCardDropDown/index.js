@@ -4,8 +4,8 @@ import styles from './style.module.css'
 import Rate from '../Rate'
 import Button from '../Button'
 
-const MovieCardDropDown = () => (
-    <div className={styles.dropDown}>
+const MovieCardDropDown = ({active}) => (
+    <div className={active === true ? styles.dropDown : styles.dropDownHide}>
         <div className={styles.description}>
             <li className={styles.movieDescription}>
                 Movie Description...

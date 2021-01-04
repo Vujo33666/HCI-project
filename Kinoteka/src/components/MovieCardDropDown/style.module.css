@@ -9,6 +9,10 @@
     justify-content: space-between;
 }
 
+.dropDownHide {
+    display: none;
+}
+
 .dropDown .rating {
     height: 150px;
 
