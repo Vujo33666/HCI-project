@@ -1,0 +1,46 @@
+.quote {
+    width: 650px;
+    height: 150px;
+
+    padding: 25px;
+
+    background: rgba(212, 175, 55, 0.8);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteHide {
+    display: none;
+}
+
+.quote .quoteText {
+    list-style: none;
+
+    width: 90%;
+    padding: 1% 5% 1% 5%;
+
+    font-size: 30px;
+    text-align: center;
+    font-family: "Freestyle Script";
+    color: rgba(0,0,0);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.quote .quoteBy {
+    list-style: none;
+
+    width: 84%;
+    padding: 0% 5% 0% 5%;
+
+    font-size: 28px;
+    text-align: center;
+    font-family: "Freestyle Script";
+    color: rgba(0,0,0);
+}
