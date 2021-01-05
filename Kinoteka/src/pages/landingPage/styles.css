@@ -1,4 +1,8 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-image: url("../../images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
