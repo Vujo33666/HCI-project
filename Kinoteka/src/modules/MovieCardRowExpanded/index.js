@@ -12,6 +12,7 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
         <div className={styles.pool}>
             <button onMouseOver={() => setValue(false)}
                     onMouseLeave={() => setValue(true)}
+                    className={styles.testButton}
             > BOTUN </button>
             <MovieCardRow   onMouseOver={() => setValue(false)}
                             onMouseLeave={() => setValue(true)}

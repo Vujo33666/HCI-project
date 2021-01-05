@@ -1,0 +1,11 @@
+.playButton {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

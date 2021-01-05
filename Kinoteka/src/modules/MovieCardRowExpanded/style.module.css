@@ -11,7 +11,7 @@
     background: rgba(16,16,16);
 }
 
-.pool button {
+.pool .testButton {
     list-style: none;
 
     width: 100px;

@@ -11,9 +11,9 @@ const MovieCardDropDown = ({active}) => (
                 Movie Description...
             </li>
             <div className={styles.buttons}>
-                <Button />
-                <Button />
-                <Button />
+                <Button activeButton = 'watchNow'/>
+                <Button activeButton = 'watchLater'/>
+                <Button activeButton = 'addToFavourites'/>
             </div>
         </div>
         <div className={styles.rating}>
