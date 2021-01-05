@@ -1,12 +1,10 @@
 import React from "react"
 
-import NavigationBar from '../components/NavigationBar'
-import Background from '../components/BackgroundImage'
+import Landing from '../modules/Landing'
 
 const LandingPage = () => (
   <main>
-    <NavigationBar activeTab = ''/>
-    <Background/>
+    <Landing/>
   </main>
 )
 

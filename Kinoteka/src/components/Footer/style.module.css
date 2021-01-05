@@ -1,62 +1,64 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 98%;
+    height: 80px;
+    padding: 1%;
+    margin: 0%;
 
-    padding-left: 2%;
-    padding-right: 2%;
     background-color: rgba(0,0,0);
 
-    width: 96%;
-    height: 100px;
+    display: flex;
 }
 
-.footer .aboutText {
+.footer .logo {
+    height: 80px;
+    width: 80px;
+
+    padding: 0%;
+    margin: 0% 1% 0% 0%;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 0px;
-    margin: 0px;
-
-    width: max-content;
-}
-
-.footer .aboutText li {
     list-style: none;
       
     font-size: 12px;
     font-family: "Righteous";
     text-transform: uppercase;
     color: rgba(255, 255, 255);
-  }
+}
 
 .footer .verticalLine {
-    height: 90%;
+    height: 100%;
     width: 5px;
-    padding: 0px;
+    padding: 0%;
+    margin: 0%;
+
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
 }
 
-.footer .logo {
-    height: 90px;
-    width: 90px;
+.footer .aboutText {
+    width: calc(98% - 85px);
+    height: 100%;
+
+    padding: 0%;
+    margin: 0% 0% 0% 1%;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-
-    padding: 0px;
-    margin: 0px;
 }
 
-.footer .logo li {
+.footer .aboutText li {
+    width: 100%;
+
     list-style: none;
       
     font-size: 12px;
     font-family: "Righteous";
     text-transform: uppercase;
+    text-align: center;
     color: rgba(255, 255, 255);
 }

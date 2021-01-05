@@ -11,7 +11,7 @@ const secondFooterText = `
 const Footer = () => (
     <footer className={styles.footer}>
         <ul className={styles.logo}>
-            <li>LOGO</li>
+            LOGO
         </ul>
         <ul className={styles.verticalLine}/>
         <ul className={styles.aboutText}>
@@ -20,5 +20,5 @@ const Footer = () => (
         </ul>
     </footer>
 )
-  
+
 export default Footer

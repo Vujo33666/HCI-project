@@ -1,15 +1,18 @@
 import React from 'react'
 
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 import styles from './style.module.css'
+
+import NavigationBar from '../NavigationBar'
+import Intro from '../Intro'
 
 const Background = () => {
     const data = useStaticQuery(graphql`
     query {
-        myImage: file(relativePath: { eq: "Background.png" }) {
+        desktop: file(relativePath: { eq: "Background.png" }) {
             childImageSharp {
-                fluid(maxWidth: 1920) {
+                fluid(quality: 100, maxWidth: 1920, maxHeight: 1080) {
                 ...GatsbyImageSharpFluid
                 }
             }
@@ -18,9 +21,15 @@ const Background = () => {
     `)
     
     return (
-        <div className={styles.background}>
-            <Img fluid={data.myImage.childImageSharp.fluid} />
-        </div>
+        <BackgroundImage
+          className={styles.background}
+          fluid={data.desktop.childImageSharp.fluid}
+        >
+            <div className={styles.hello}>
+                <NavigationBar className={styles.navigationBar}/>
+                <Intro className={styles.intro}/>
+            </div>
+        </BackgroundImage>
     )
 }
 
