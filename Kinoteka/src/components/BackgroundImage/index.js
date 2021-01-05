@@ -7,7 +7,7 @@ import styles from './style.module.css'
 import NavigationBar from '../NavigationBar'
 import Intro from '../Intro'
 
-const Background = () => {
+const Background = ({activeIntro}) => {
     const data = useStaticQuery(graphql`
     query {
         desktop: file(relativePath: { eq: "Background.png" }) {
@@ -25,9 +25,9 @@ const Background = () => {
           className={styles.background}
           fluid={data.desktop.childImageSharp.fluid}
         >
-            <div className={styles.hello}>
-                <NavigationBar className={styles.navigationBar}/>
-                <Intro className={styles.intro}/>
+            <div>
+                <NavigationBar />
+                <Intro activeIntro="landingIntro"/>
             </div>
         </BackgroundImage>
     )

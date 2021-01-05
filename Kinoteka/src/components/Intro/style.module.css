@@ -13,3 +13,19 @@
     text-transform: uppercase;
     color: rgba(212, 175, 55);
 }
+
+.landingIntro {
+    width: 100vw;
+    height: calc(98vh - 40px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+        
+    font-size: 50px;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(212, 175, 55);
+}

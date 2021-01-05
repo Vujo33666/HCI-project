@@ -4,7 +4,7 @@ import Landing from '../modules/Landing'
 
 const LandingPage = () => (
   <main>
-    <Landing/>
+    <Landing activeIntro="landingIntro"/>
   </main>
 )
 
