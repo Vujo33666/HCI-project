@@ -4,7 +4,7 @@
   width: 600px;
   height: 40px;
 
-  padding: 0vh calc(50vw - 300px) 0vh calc(50vw - 300px);
+  padding: 1vh calc(50% - 300px) 1vh calc(50% - 300px);
   margin: 0%;
 
   display: flex;

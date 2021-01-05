@@ -1,9 +1,10 @@
 .row {
     width: 700px;
+    height: 220px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    margin-bottom: 33px;
+    margin-bottom: 5vh;
 }

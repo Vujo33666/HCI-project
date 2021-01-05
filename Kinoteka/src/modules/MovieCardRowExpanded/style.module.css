@@ -1,11 +1,11 @@
 .pool {
-    width: 100%;
+    width: 100vw;
+    height: calc(5vh + 220px + 200px + 30px);
     padding: 0% 0% 3% 0%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
     justify-content: space-evenly;
 
     background: rgba(16,16,16);
