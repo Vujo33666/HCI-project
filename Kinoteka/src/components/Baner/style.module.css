@@ -1,0 +1,48 @@
+.baner{
+    width: 100%;
+    height: 90%;
+    position: relative;
+
+    background-color: rgba(0, 0, 0);
+    background-size: cover;
+}
+
+.baner .banerBackground {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        rgba(16,16,16,0.4)   0%,
+        rgba(16,16,16,  0)  50%,
+        rgba(16,16,16,0.4) 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.baner .movieInfo {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    list-style: none;
+    font-size: 2.6vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(212, 175, 55);
+}
+
+.baner .movieInfo ul {
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}

@@ -27,7 +27,7 @@ const Background = ({activeIntro}) => {
         >
             <div>
                 <NavigationBar navigationBarWhere = "landing"/>
-                <Intro activeIntro="landingIntro"/>
+                <Intro activeIntro={activeIntro}/>
             </div>
         </BackgroundImage>
     )
