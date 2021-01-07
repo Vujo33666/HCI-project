@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styles from './style.module.css'
 
 import Navigation from '../Navigation'
+import Rate from '../Rate'
+import Button from '../Button'
+import { arrayOf } from 'prop-types'
 
 const Baner = ({activeTab, navigationBarWhere}) => {
     const data = useStaticQuery(graphql`
@@ -34,19 +37,22 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         movie Cathegory
                     </ul>
                     <ul  className={styles.movieDuration}>
-                        movie Duration
+                        1 movie 1 duration
                     </ul>
                     <ul className={styles.movieRating}>
-                        movie Rating
+                        <Rate text="Ocjene Korisnika"/>
+                        <Rate text="IMDB Ocjena"/>
                     </ul>
                     <ul  className={styles.watchNow}>
-                        watch Now
+                        <Button activeButton = "watchNowBig"/>
                     </ul>
                     <ul  className={styles.banerScroll}>
-                        baner Scroll
+                        {[...Array(5)].map( scroll => {
+                            return <li className={styles.verticalLineScroll}/>
+                        })}
                     </ul>
                     <ul  className={styles.banerBodySeparator}>
-                        baner Body Separator
+                        popularni
                     </ul>
                 </section>
             </div>

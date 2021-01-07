@@ -2,6 +2,7 @@ import React from 'react'
 
 import styles from './style.module.css'
 import { FaHeart } from "react-icons/fa"
+import { FaPlayCircle } from "react-icons/fa"
 import PlayButton from '../PlayButton'
 
 const Button = ({activeButton}) => {
@@ -25,6 +26,11 @@ const Button = ({activeButton}) => {
         buttonClassName = styles.watchNow
         buttonText = "gledaj sada"
         buttonExtras = <PlayButton/>
+    }
+    else if (activeButton === "watchNowBig") {
+        buttonClassName = styles.watchNowBig
+        buttonText = "gledaj sada"
+        buttonExtras = <FaPlayCircle size={30} className={styles.playCircle}/>
     }
     else if (activeButton === "watchLater") {
         buttonClassName = styles.watchLater
