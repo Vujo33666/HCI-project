@@ -3,7 +3,9 @@ import React from 'react'
 import styles from './style.module.css'
 
 const Quote = ({active, quoteText, quoteBy}) => (
-    <div className={active === true ? styles.quote : styles.quoteHide}>
+    <div className={active === true ? styles.quote :
+                    active === false ? styles.quoteHide :
+                    styles.landingQuote}>
         <li className={styles.quoteText}>
             {quoteText}
         </li>

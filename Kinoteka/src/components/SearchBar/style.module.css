@@ -1,9 +1,11 @@
-.searchBar {
-    width: 40%;
-    height: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.searchBarLanding {
+    width: 30vw;
+    height: 5vh;
     padding: 0%;
     border: 0px;
-    margin: 0%;
+    margin: 0vh 0vw 3vh 0vw;
 
     display: flex;
     flex-direction: row;
@@ -14,15 +16,17 @@
     border-radius: 2vh;
 }
 
-.searchBar .searchBarInput {
+.searchBarLanding .searchBarInput {
     width: 70%;
     height: 100%;
     padding: 0%;
     border: 0px;
     margin: 0%;
+
+    cursor: text;
 }
 
-.searchBar .searchBarInput .leadingText{
+.searchBarLanding .searchBarInput .leadingText{
     width: 96%;
     height: 100%;
     padding: 0%;
@@ -35,14 +39,18 @@
 
     list-style: none;
       
-    font-size: 18px;
-    font-family: 'Times New Roman';
+    font-size: 2vh;
+    font-family: 'Roboto';
     text-transform: none;
 
     color: rgba(0, 0, 0);
 }
 
-.searchBar .searchButton {
+.searchBarLanding .searchBarInput .leadingTextHide{
+    display: none;
+}
+
+.searchBarLanding .searchButton {
     width: 30%;
     height: 100%;
     padding: 0%;
@@ -55,7 +63,7 @@
 
     list-style: none;
       
-    font-size: 16px;
+    font-size: 2.4vh;
     font-family: "Righteous";
     text-transform: uppercase;
 
