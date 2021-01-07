@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
@@ -7,7 +7,7 @@ import styles from './style.module.css'
 import Navigation from '../Navigation'
 import Rate from '../Rate'
 import Button from '../Button'
-import { arrayOf } from 'prop-types'
+import ScrollBar from '../ScrollBar'
 
 const Baner = ({activeTab, navigationBarWhere}) => {
     const data = useStaticQuery(graphql`
@@ -47,9 +47,7 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         <Button activeButton = "watchNowBig"/>
                     </ul>
                     <ul  className={styles.banerScroll}>
-                        {[...Array(5)].map( scroll => {
-                            return <li className={styles.verticalLineScroll}/>
-                        })}
+                        <ScrollBar />
                     </ul>
                     <ul  className={styles.banerBodySeparator}>
                         popularni
