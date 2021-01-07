@@ -26,7 +26,7 @@ const Background = ({activeIntro}) => {
           fluid={data.desktop.childImageSharp.fluid}
         >
             <div>
-                <NavigationBar />
+                <NavigationBar navigationBarWhere = "landing"/>
                 <Intro activeIntro="landingIntro"/>
             </div>
         </BackgroundImage>

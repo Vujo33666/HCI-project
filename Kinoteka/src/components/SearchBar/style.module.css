@@ -14,9 +14,27 @@
 
     background: rgba(255, 255, 255, 0.25);
     border-radius: 2vh;
+    font-size: 2vh;
 }
 
-.searchBarLanding .searchBarInput {
+.searchBarNav {
+    width: 20%;
+    height: 50%;
+    padding: 0%;
+    border: 0px;
+    margin: 25% 2% 25% 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 2vh;
+    font-size: 1.8vh;
+}
+
+.searchBarInput {
     width: 70%;
     height: 100%;
     padding: 0%;
@@ -26,7 +44,7 @@
     cursor: text;
 }
 
-.searchBarLanding .searchBarInput .leadingText{
+.searchBarInput .leadingText{
     width: 96%;
     height: 100%;
     padding: 0%;
@@ -38,19 +56,18 @@
     align-items: center;
 
     list-style: none;
-      
-    font-size: 2vh;
+
     font-family: 'Roboto';
     text-transform: none;
 
     color: rgba(0, 0, 0);
 }
 
-.searchBarLanding .searchBarInput .leadingTextHide{
+.searchBarInput .leadingTextHide{
     display: none;
 }
 
-.searchBarLanding .searchButton {
+.searchButton {
     width: 30%;
     height: 100%;
     padding: 0%;
@@ -62,8 +79,8 @@
     align-items: center;
 
     list-style: none;
-      
-    font-size: 2.4vh;
+    
+    font-size: 100%;
     font-family: "Righteous";
     text-transform: uppercase;
 
