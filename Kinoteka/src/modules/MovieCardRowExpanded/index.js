@@ -15,7 +15,7 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
                 onMouseLeave = {() => 
                     setTimeout(() => {
                         setValue(true)
-                    }, 500)
+                    }, 1000)
                 }
             />
             <Quote
