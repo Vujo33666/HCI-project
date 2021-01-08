@@ -1,6 +1,6 @@
 .pool {
     width: 100%;
-    height: calc(5vh + 220px + 200px + 30px);
+    height: calc(5vh + 220px + 200px);
     padding: 0% 0% 3% 0%;
 
     display: flex;
@@ -9,19 +9,4 @@
     justify-content: space-evenly;
 
     background: rgba(16,16,16);
-}
-
-.pool .testButton {
-    list-style: none;
-
-    width: 100px;
-    height: 30px;
-
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-
-    border-radius: 5px;
-
-    background: rgba(212, 175, 55, 0.8);
 }

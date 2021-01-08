@@ -10,18 +10,22 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
 
     return (
         <div className={styles.pool}>
-            <button onMouseEnter={() => setValue(false)}
-                    onMouseLeave={() => setValue(true)}
-                    className={styles.testButton}
-            > BOTUN </button>
-            <MovieCardRow   onMouseEnter={() => setValue(false)}
-                            onMouseLeave={() => setValue(true)}
+            <MovieCardRow
+                onMouseEnter = {() => setValue(false)}
+                onMouseLeave = {() => 
+                    setTimeout(() => {
+                        setValue(true)
+                    }, 500)
+                }
             />
-            <Quote  active = {isActive}
-                    quoteText = {quoteText}
-                    quoteBy = {quoteBy}
+            <Quote
+                active = {isActive}
+                quoteText = {quoteText}
+                quoteBy = {quoteBy}
             />
-            <MovieCardDropDown active = {!isActive}/>
+            <MovieCardDropDown
+                active = {!isActive}
+            />
         </div>
     )
 }
