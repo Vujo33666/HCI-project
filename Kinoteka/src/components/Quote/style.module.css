@@ -23,7 +23,7 @@
     width: 90%;
     padding: 1% 5% 1% 5%;
 
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
@@ -43,4 +43,54 @@
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
+}
+
+.landingQuote {
+    width: 50vw;
+    height:fit-content;
+
+    padding: 0%;
+    border: 0px;
+    margin: 1vh 0vw 0vw 0vw;
+
+    display: flex;
+    flex-direction: column; 
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landingQuote .quoteText {
+    list-style: none;
+
+    width: 90%;
+    padding: 1% 5% 1% 5%;
+
+    font-size: 4.2vh;
+    text-align: center;
+    font-family: "Freestyle Script";
+    text-transform: none;
+    color: rgba(212, 175, 55);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.landingQuote .quoteBy {
+    list-style: none;
+
+    width: 90%;
+    padding: 0% 5% 0% 5%;
+
+    font-size: 4.2vh;
+    text-align: center;
+    font-family: "Freestyle Script";
+    text-transform: none;
+    color: rgba(212, 175, 55);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }

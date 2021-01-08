@@ -2,11 +2,16 @@ import React from 'react'
 
 import styles from './style.module.css'
 import NavigationBar from '../NavigationBar'
-import Logo from '../Logo'
+import SearchBar from '../SearchBar'
 
-const Navigation = ({activeTab}) => (
+const Navigation = ({activeTab, navigationBarWhere}) => (
   <section className={styles.navigation}>
-    <NavigationBar activeTab={activeTab} />
+    <div className={styles.navLogoSiteName}>
+      <h1>LOGO</h1>
+      <h2>KINOTEKA</h2>
+    </div>
+    <NavigationBar activeTab={activeTab} navigationBarWhere = {navigationBarWhere}/>
+    <SearchBar searchBarWhere="navigation" />
   </section>
 )
 

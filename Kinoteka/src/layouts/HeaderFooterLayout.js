@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
  
 const HeaderFooterLayout = ({children, activeTab}) => (
   <>
-    <Navigation activeTab={activeTab} />
+    <Navigation activeTab={activeTab} navigationBarWhere = "navigation"/>
       {children}
     <Footer />
   </>

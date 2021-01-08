@@ -1,10 +1,10 @@
 import React from "react"
 
-import HeaderFooterLayout from "../layouts/HeaderFooterLayout"
+import BanerFooterLayout from "../layouts/BanerFooterLayout"
 import MovieCardRowExpanded from "../modules/MovieCardRowExpanded"
  
 const NaslovnaPage = () => (
-    <HeaderFooterLayout activeTab="Naslovna">
+    <BanerFooterLayout activeTab="Naslovna">
         <MovieCardRowExpanded
             quoteText = "Happines can be found even in the darkest of times, if one only remembers to turn on the light."
             quoteBy = "- Dumbledore"
@@ -13,7 +13,7 @@ const NaslovnaPage = () => (
             quoteText = "Frankly my dear, I don't give a damn."
             quoteBy = "- Rhett Butler"
         />
-    </HeaderFooterLayout>
+    </BanerFooterLayout>
 )
  
 export default NaslovnaPage

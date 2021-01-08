@@ -51,8 +51,12 @@
     align-items: center;
 }
 
-.footer .aboutText li {
+.footer .aboutText ul {
     width: 100%;
+    height: fit-content;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 
     list-style: none;
       
@@ -61,4 +65,28 @@
     text-transform: uppercase;
     text-align: center;
     color: rgba(255, 255, 255);
+}
+
+.footer .aboutText .makers {
+    width: 30%;
+    margin: 0% 35% 0% 35%;
+
+    display: flex;
+    justify-content: space-around;
+      
+    font-size: 12px;
+    font-family: "Righteous";
+    text-transform: none !important;
+    text-align: center;
+    color: rgba(255, 255, 255);
+}
+
+.makers li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.makers .gitLogo{
+    margin-right: 5px;
 }

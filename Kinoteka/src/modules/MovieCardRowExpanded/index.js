@@ -10,11 +10,11 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
 
     return (
         <div className={styles.pool}>
-            <button onMouseOver={() => setValue(false)}
+            <button onMouseEnter={() => setValue(false)}
                     onMouseLeave={() => setValue(true)}
                     className={styles.testButton}
             > BOTUN </button>
-            <MovieCardRow   onMouseOver={() => setValue(false)}
+            <MovieCardRow   onMouseEnter={() => setValue(false)}
                             onMouseLeave={() => setValue(true)}
             />
             <Quote  active = {isActive}

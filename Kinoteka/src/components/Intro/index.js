@@ -2,16 +2,28 @@ import React from 'react'
 
 import styles from './style.module.css'
 import SearchBar from '../SearchBar'
+import Quote from '../Quote'
 
 const Intro = ({activeIntro}) => {
     let introClassName = ''
-    let introText = "HELLO"
-    let introExtra = ''
+    let intro = ''
 
     if (activeIntro === "landingIntro") {
         introClassName = styles.landingIntro
-        introText = ''
-        introExtra = <SearchBar/>
+        intro = <div className={styles.landingIntro}>
+                    <h1>
+                        <p>LOGO</p>
+                        <p>LOGO</p>
+                        <p>LOGO</p>
+                    </h1>
+                    <h2>KINOTEKA</h2>
+                    <SearchBar searchBarWhere ="landing" />
+                    <Quote 
+                        active = "landingQuote"
+                        quoteText = "Movies are not about the weekend that they’re released, and in the grand scheme of things, that’s probably the most unimportant time of a film’s life."
+                        quoteBy = "- Quentin Tarantino"
+                    />
+                </div>
     }
     else if (activeIntro === "cathegoryIntro") {
         introClassName = styles.cathegoryIntro
@@ -24,8 +36,7 @@ const Intro = ({activeIntro}) => {
     }
 
     return  <div className={introClassName}>
-        {introText}
-        {introExtra}
+        {intro}
     </div>
 }
 

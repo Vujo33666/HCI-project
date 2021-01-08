@@ -132,10 +132,41 @@
 }
 
 .watchNow:hover {
-    color: rgba(0,0,0,0.8);
-    background: rgba(212, 175, 55, 0.5);
-    border-radius: 5px;
     cursor: pointer;
+}
+
+.watchNowBig {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+    font-size: 3vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255,255,255);
+    background: rgba(0,0,0,0);
+}
+.watchNowBig:hover {
+    cursor: pointer;
+}
+.watchNowBig .playCircle{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    margin-right: 10px;
+    
+    border-radius: 50%;
+    background-color: rgba(255,255,255);
+
+    color: rgba(212, 175, 55);
 }
 
 .watchLater {

@@ -1,0 +1,42 @@
+.scrollBar {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scrollBar .notActive {
+    width: 18%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    border-radius: 1vh;
+    background: rgba(255, 255, 255);
+}
+
+.scrollBar .active {
+    width: 18%;
+    height: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    border-radius: 1vh;
+    background: rgba(212, 175, 55);
+}
+
+.scrollBar .notActive:hover {
+    background: rgba(212, 175, 55, 0.5);
+    cursor: pointer;
+}
+.scrollBar .active:hover {
+    cursor: pointer;
+}
