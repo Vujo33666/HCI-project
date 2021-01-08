@@ -1,0 +1,105 @@
+.cathegoryPoolExpanded {
+    width: 700px;
+    height: fit-content;
+
+    margin: 0vh calc(50% - 350px) 5vh calc(50% - 350px);
+
+    display: flex;
+    flex-direction: column;
+ 
+    list-style: none;
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255,255,255);
+}
+
+.cathegoryPoolLandingExpanded {
+    width: 70%;
+    height: fit-content;
+
+    margin: 0vh calc(50% - 350px) 5vh calc(50% - 350px);
+
+    display: flex;
+    flex-direction: column;
+ 
+    list-style: none;
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255,255,255);
+}
+
+.selectedCathegoryWithButton {
+    width: calc(100% - 6vh);
+    height: fit-content;
+    padding: 3vh 3vh 3vh 3vh;
+    margin: 0vh 0vh 2vh 0vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    list-style: none;
+    font-size: 4vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255,255,255);
+    background: rgba(0, 0, 0);
+}
+
+.cathegoryPoolLandingExpanded .selectedCathegory {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.selectedCathegory {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.selectedCathegoryMessage {
+    width: fit-content;
+    height: fit-content;
+}
+
+.selectedCathegoryName {
+    width: fit-content;
+    height: fit-content;
+
+    margin: 0% 0% 0% 2%;
+}
+
+.selectedCathegoryNameHide {
+    display: none;
+}
+
+.cathegoryPool {
+    width: calc(100% - 6vh);
+    height: fit-content;
+    padding: 3vh 3vh 0vh 3vh;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    background: rgba(0,0,0);
+}
+
+.cathegoryName {
+    width: 25%;
+    height: fit-content;
+    padding: 0px;
+    border: 0px;
+    margin: 0px 0px 3vh 0px;
+}
+
+.cathegoryName:hover {
+    cursor: pointer;
+}

@@ -50,6 +50,15 @@ const Button = ({activeButton}) => {
             <li className={styles.verticalLine}/>
         </ul>
     }
+    else if (activeButton === "dropDownBig") {
+        buttonClassName = styles.dropDownBig
+        buttonText = ""
+        buttonExtras = <ul>
+            <li className={styles.verticalLine}/>
+            <li className={styles.verticalLine}/>
+            <li className={styles.verticalLine}/>
+        </ul>
+    }
     else if (activeButton === "readMore") {
         buttonClassName = styles.readMore
         buttonText = "pročitaj više"

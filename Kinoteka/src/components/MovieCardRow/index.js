@@ -3,8 +3,10 @@ import React from "react"
 import styles from './style.module.css'
 import MovieCard  from '../MovieCard'
 
-const MovieCardRow = () => (
-    <div className={styles.row}>
+const MovieCardRow = ({onMouseEnter, onMouseLeave}) => (
+    <div onMouseEnter = {onMouseEnter}
+         onMouseLeave = {onMouseLeave}
+         className={styles.row}>
         <MovieCard />
         <MovieCard />
         <MovieCard />

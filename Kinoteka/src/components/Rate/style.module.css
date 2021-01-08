@@ -17,6 +17,18 @@
     color: rgba(255,255,255);
 }
 
+.rate .stars .active {
+    color: rgba(212, 175, 55);
+}
+
+.rate .stars .active:hover {
+    cursor: pointer;
+}
+
+.rate .stars .notActive:hover {
+    cursor: pointer;
+}
+
 .rate .text {
     list-style: none;
     
