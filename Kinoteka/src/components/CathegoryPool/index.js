@@ -4,20 +4,20 @@ import styles from './style.module.css'
 import Button from '../Button'
 import {cath as cathegorys} from '../../constants/const'
 
-const CathegoryPool = ({cathegoryPoolWhere}) => (
-    <div className={cathegoryPoolWhere === "landing" ? styles.cathegoryPoolLandingExpanded :  styles.cathegoryPoolExpanded}>  
+const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => (
+    <div className={cathegoryPoolWhere === "landing" ? styles.cathegoryPoolLandingExpanded : styles.cathegoryPoolExpanded}>  
         <div className={styles.selectedCathegoryWithButton}>
             <div className={styles.selectedCathegory}>
                 <div className={styles.selectedCathegoryMessage}>
-                    Odabrana kategorija:
+                    {textForIntro}
                 </div>
-                <div className={styles.selectedCathegoryName}>
+                <div className={cathegoryPoolWhere === "landing" ? styles.selectedCathegoryNameHide : styles.selectedCathegoryName}>
                     Akcijski
                 </div>
             </div>
             <Button 
-                className ={cathegoryPoolWhere === "landing" ? styles.buttonHide : styles.buttonDrop}
-                activeButton = 'dropDownBig'/>
+                className ={styles.buttonDrop}
+                activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}/>
         </div>
         <div className={styles.cathegoryPool} cathegoryPool>
             {

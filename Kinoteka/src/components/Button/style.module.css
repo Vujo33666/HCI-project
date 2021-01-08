@@ -1,23 +1,5 @@
 .button {
-    list-style: none;
-
-    width: 100px;
-    height: 30px;
-
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-
-    border-radius: 5px;
-
-    background: rgba(212, 175, 55, 0.8);
-}
-
-.button:hover {
-    color: rgba(0,0,0,0.8);
-    background: rgba(212, 175, 55, 0.5);
-    border-radius: 5px;
-    cursor: pointer;
+    display: none;
 }
 
 .signIn {
@@ -270,16 +252,6 @@
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 .dropDownBig {
     height: 50px;
     width: 50px;
@@ -319,17 +291,6 @@
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .readMore {
     list-style: none;

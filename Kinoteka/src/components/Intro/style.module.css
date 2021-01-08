@@ -76,3 +76,14 @@
     text-transform: uppercase;
     color: rgba(212, 175, 55, 0.8);
 }
+
+.cathegoryIntro {
+    width: 100vw;
+    height: 92vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20vh;
+}

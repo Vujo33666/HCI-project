@@ -6,7 +6,7 @@ import MovieCardRowExpanded from "../modules/MovieCardRowExpanded"
  
 const KategorijePage = () => (
     <HeaderFooterLayout activeTab="Kategorije">
-        <CathegoryPool/>
+        <CathegoryPool textForIntro="Odabrana Kategorija:"/>
         <MovieCardRowExpanded
             quoteText = "Happines can be found even in the darkest of times, if one only remembers to turn on the light."
             quoteBy = "- Dumbledore"

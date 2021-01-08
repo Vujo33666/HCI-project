@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './style.module.css'
 import SearchBar from '../SearchBar'
 import Quote from '../Quote'
+import CathegoryPool from '../CathegoryPool'
 
 const Intro = ({activeIntro}) => {
     let introClassName = ''
@@ -27,6 +28,9 @@ const Intro = ({activeIntro}) => {
     }
     else if (activeIntro === "cathegoryIntro") {
         introClassName = styles.cathegoryIntro
+        intro = <div className={styles.cathegoryIntro}>
+                    <CathegoryPool cathegoryPoolWhere="landing" textForIntro="Odaberite Kategoriju:"/>
+                </div>
     }
     else if (activeIntro === "forumIntro") {
         introClassName = styles.forumIntro
