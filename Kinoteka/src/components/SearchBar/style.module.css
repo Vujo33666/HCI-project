@@ -88,3 +88,7 @@
     background: rgba(212, 175, 55, 0.8);
     border-radius: 0px 2vh 2vh 0px;
 }
+
+.searchButton:hover{
+    cursor: pointer;
+}

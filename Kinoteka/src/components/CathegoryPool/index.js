@@ -19,7 +19,7 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => (
                 className ={styles.buttonDrop}
                 activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}/>
         </div>
-        <div className={styles.cathegoryPool} cathegoryPool>
+        <div className={styles.cathegoryPool}>
             {
                 cathegorys.map(
                     tab => <li className={styles.cathegoryName}>- {tab}</li>
