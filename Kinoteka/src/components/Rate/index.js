@@ -10,11 +10,13 @@ const Rate = ({text}) => {
         <div className={styles.rate}>
             <li className={styles.stars}>
                 {[...Array(5)].map((star, i) => {
+                    const ratingValue = i + 1;
+
                     if (text === "Ocjenite Sami") {
-                        const ratingValue = i + 1;
 
                         return (
                             <FaStar 
+                                key={ratingValue}
                                 size={16}
                                 className={ratingValue <= rating ? styles.active : styles.notActive}
                                 onClick={() => setRating(rating === ratingValue ? null : ratingValue)}
@@ -23,7 +25,10 @@ const Rate = ({text}) => {
                     }
                     else {
                         return (
-                            <FaStar size={16}/>
+                            <FaStar 
+                                key={ratingValue}
+                                size={16}
+                            />
                         )
                     }
                 })}

@@ -7,7 +7,11 @@ const NavigationBar = ({activeTab, navigationBarWhere}) => (
     <nav className={navigationBarWhere === "navigation" ? styles.navigationBarNav :  styles.navigationBar}>  
         {
             navigationTabs.map(
-                tab => <li className={tab === activeTab ? styles.active : styles.navLiTab}>{tab}</li>
+                tab =>  <li key={tab}
+                            className={tab === activeTab ? styles.active : styles.navLiTab}
+                        >
+                            {tab}
+                        </li>
             )
         }
     </nav>

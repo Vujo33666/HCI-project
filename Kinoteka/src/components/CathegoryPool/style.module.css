@@ -41,12 +41,13 @@
     align-items: center;
     justify-content: space-between;
     
+    border-radius: 2vh;
     list-style: none;
     font-size: 4vh;
     font-family: "Righteous";
     text-transform: uppercase;
     color: rgba(255,255,255);
-    background: rgba(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .cathegoryPoolLandingExpanded .selectedCathegory {
@@ -88,8 +89,13 @@
 
     display: flex;
     flex-flow: row wrap;
+    border-radius: 2vh;
 
-    background: rgba(0,0,0);
+    background: rgba(0,0,0, 0.6);
+}
+
+.cathegoryPoolHide {
+    display: none;
 }
 
 .cathegoryName {
