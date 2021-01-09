@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa"
 import { FaPlayCircle } from "react-icons/fa"
 import PlayButton from '../PlayButton'
 
-const Button = ({onMouseEnter, onMouseLeave, activeButton}) => {
+const Button = ({onClick, activeButton}) => {
     let buttonClassName = ''
     let buttonText = "Submit"
     let buttonExtras = ""
@@ -69,8 +69,7 @@ const Button = ({onMouseEnter, onMouseLeave, activeButton}) => {
     }
 
     return <button 
-        onMouseEnter = {onMouseEnter}
-        onMouseLeave = {onMouseLeave}
+        onClick = {onClick}
         className={buttonClassName}
     >
         {buttonExtras}
