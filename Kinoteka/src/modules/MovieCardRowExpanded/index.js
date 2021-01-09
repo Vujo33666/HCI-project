@@ -11,12 +11,7 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
     return (
         <div className={styles.pool}>
             <MovieCardRow
-                onMouseEnter = {() => setValue(false)}
-                onMouseLeave = {() => 
-                    setTimeout(() => {
-                        setValue(true)
-                    }, 1000)
-                }
+                onClick = {() => setValue(!isActive)}
             />
             <Quote
                 active = {isActive}

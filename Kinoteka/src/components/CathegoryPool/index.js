@@ -7,6 +7,10 @@ import {cath as cathegorys} from '../../constants/const'
 const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
     const [isActive, setValue] = useState(false);
 
+    const handleMouseClick = () => {
+        setValue(!isActive)
+    }
+
     return (
         <div className={cathegoryPoolWhere === "landing" ? styles.cathegoryPoolLandingExpanded : styles.cathegoryPoolExpanded}>  
             <div className={styles.selectedCathegoryWithButton}>
@@ -21,12 +25,7 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
                 <Button 
                     className ={styles.buttonDrop}
                     activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}
-                    onMouseEnter = {() => setValue(true)}
-                    onMouseLeave = {() => 
-                        setTimeout(() => {
-                            setValue(false)
-                        }, 1000)
-                    }
+                    onClick = {() => setValue(!isActive)}
                 />
             </div>
             <div className={
