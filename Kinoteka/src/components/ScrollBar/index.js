@@ -11,7 +11,7 @@ const ScrollBar = () => {
                 const chosenValue = i + 1;
 
                 return (
-                    <li
+                    <li key={chosenValue}
                         className={chosenValue === isChosen ? styles.active : styles.notActive}
                         onClick={() => setChosen(chosenValue)}
                     />

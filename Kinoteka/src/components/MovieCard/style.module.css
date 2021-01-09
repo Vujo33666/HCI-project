@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    background: rgba(66, 177, 177, 0.1);;
+    background: rgba(66, 177, 177, 0.1);
+    border-radius: 2vh;
 }
 
 .card li {

@@ -1,7 +1,6 @@
 .quote {
     width: 650px;
     height: 150px;
-
     padding: 25px;
 
     background: rgba(212, 175, 55, 0.8);
@@ -11,6 +10,8 @@
 
     justify-content: center;
     align-items: center;
+
+    border-radius: 2vh;
 }
 
 .quoteHide {

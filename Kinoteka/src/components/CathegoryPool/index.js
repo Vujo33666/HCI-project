@@ -1,32 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styles from './style.module.css'
 import Button from '../Button'
 import {cath as cathegorys} from '../../constants/const'
 
-const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => (
-    <div className={cathegoryPoolWhere === "landing" ? styles.cathegoryPoolLandingExpanded : styles.cathegoryPoolExpanded}>  
-        <div className={styles.selectedCathegoryWithButton}>
-            <div className={styles.selectedCathegory}>
-                <div className={styles.selectedCathegoryMessage}>
-                    {textForIntro}
+const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
+    const [isActive, setValue] = useState(false);
+
+    return (
+        <div className={cathegoryPoolWhere === "landing" ? styles.cathegoryPoolLandingExpanded : styles.cathegoryPoolExpanded}>  
+            <div className={styles.selectedCathegoryWithButton}>
+                <div className={styles.selectedCathegory}>
+                    <div className={styles.selectedCathegoryMessage}>
+                        {textForIntro}
+                    </div>
+                    <div className={cathegoryPoolWhere === "landing" ? styles.selectedCathegoryNameHide : styles.selectedCathegoryName}>
+                        Akcijski
+                    </div>
                 </div>
-                <div className={cathegoryPoolWhere === "landing" ? styles.selectedCathegoryNameHide : styles.selectedCathegoryName}>
-                    Akcijski
-                </div>
+                <Button 
+                    className ={styles.buttonDrop}
+                    activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}
+                    onMouseEnter = {() => setValue(true)}
+                    onMouseLeave = {() => 
+                        setTimeout(() => {
+                            setValue(false)
+                        }, 1000)
+                    }
+                />
             </div>
-            <Button 
-                className ={styles.buttonDrop}
-                activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}/>
+            <div className={
+                    ((isActive)||(cathegoryPoolWhere === "landing")) === true ? styles.cathegoryPool : styles.cathegoryPoolHide
+                }
+            >
+
+                {
+                    cathegorys.map(
+                        tab =>  <li key={tab}
+                                    className={styles.cathegoryName}
+                                >
+                                        - {tab}
+                                </li>
+                    )
+                }
+            </div>
         </div>
-        <div className={styles.cathegoryPool}>
-            {
-                cathegorys.map(
-                    tab => <li className={styles.cathegoryName}>- {tab}</li>
-                )
-            }
-        </div>
-    </div>
-)
+    )
+}
 
 export default CathegoryPool

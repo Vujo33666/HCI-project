@@ -1,12 +1,14 @@
 .dropDown {
     width: 650px;
     height: 150px;
-    background: rgba(0, 0, 0);
-
     padding: 25px;
 
     display: flex;
     flex-direction: row;
+
+    background: rgba(0, 0, 0);
+
+    border-radius: 2vh;
 }
 
 .dropDownHide {
