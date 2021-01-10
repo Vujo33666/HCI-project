@@ -14,11 +14,27 @@
     border-radius: 2vh;
 }
 
+.quotePlay {
+    width: 95%;
+    height: fit-content;
+    padding: 2.5%;
+    margin: 0vh 0vw 5vh 0vw;
+
+    background: rgba(212, 175, 55, 0.8);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    border-radius: 2vh;
+}
+
 .quoteHide {
     display: none;
 }
 
-.quote .quoteText {
+.quoteText {
     list-style: none;
 
     width: 90%;
@@ -34,11 +50,36 @@
     justify-content: center;
 }
 
-.quote .quoteBy {
+.quoteBy {
     list-style: none;
 
     width: 84%;
     padding: 0% 5% 0% 5%;
+
+    font-size: 28px;
+    text-align: center;
+    font-family: "Freestyle Script";
+    color: rgba(0,0,0);
+}
+
+.quotePlay .quoteText {
+    list-style: none;
+
+    width: 100%;
+    padding: 0% 0% 1% 0%;
+
+    font-size: 28px;
+    text-align: center;
+    font-family: "Freestyle Script";
+    color: rgba(0,0,0);
+    white-space: pre-line;
+}
+
+.quotePlay .quoteBy {
+    list-style: none;
+
+    width: 100%;
+    padding: 0%;
 
     font-size: 28px;
     text-align: center;

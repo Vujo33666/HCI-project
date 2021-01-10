@@ -10,6 +10,18 @@
     border-radius: 2vh;
 }
 
+.cardBig {
+    width: 35vh;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: rgba(66, 177, 177, 0.1);
+    border-radius: 2vh;
+}
+
 .card li {
     list-style: none;
 
@@ -25,5 +37,14 @@
     text-transform: uppercase;
     color: rgba(255, 255, 255);
 
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.cardBig li {
+    display: none;
+}
+
+.card:hover {
+    cursor: pointer;
     background: rgba(0, 0, 0, 0.2);
 }
