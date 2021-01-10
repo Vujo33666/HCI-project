@@ -5,6 +5,7 @@ import styles from './style.module.css'
 const Quote = ({active, quoteText, quoteBy}) => (
     <div className={active === true ? styles.quote :
                     active === false ? styles.quoteHide :
+                    active === "playMovie" ? styles.quotePlay :
                     styles.landingQuote}>
         <li className={styles.quoteText}>
             {quoteText}

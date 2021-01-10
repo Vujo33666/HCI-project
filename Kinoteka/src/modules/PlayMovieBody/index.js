@@ -1,12 +1,18 @@
 import React from 'react'
 
 import styles from './style.module.css'
+import Quote from '../../components/Quote'
 import PlayMoviePicture from '../../components/PlayMovieBackground'
 import MovieCard from '../../components/MovieCard'
 import Rate from '../../components/Rate'
 
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
+        <Quote 
+            quoteText = {'Jojo’s mom: “Love is the strongest thing in the world.”\nJojo: “I think you will find that metal is the strongest thing in the world, followed closly by dynamite and then muscles.”'}
+            quoteBy = "JOJO RABBIT"
+            active = "playMovie"
+        />
         <PlayMoviePicture />
         <div className={styles.playMovieDescription}>
             <MovieCard movieCardWhere="playMovie"/>
