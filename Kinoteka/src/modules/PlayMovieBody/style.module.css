@@ -1,0 +1,9 @@
+.playMovieBody {
+    width: 70%;
+    height: fit-content;
+    margin: 0% 15% 0% 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

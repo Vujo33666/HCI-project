@@ -1,11 +1,11 @@
 import React from "react"
 
 import HeaderFooterLayout from "../layouts/HeaderFooterLayout"
-import PlayMoviePicture from "../components/PlayMovieBackground"
+import PlayMovieBody from "../modules/PlayMovieBody"
  
 const KategorijePage = () => (
     <HeaderFooterLayout activeTab="">
-        <PlayMoviePicture />
+        <PlayMovieBody />
     </HeaderFooterLayout>
 )
  
