@@ -11,8 +11,8 @@
 }
 
 .cardBig {
-    width: 25%;
-    height: 300px;
+    width: 35vh;
+    height: 50vh;
 
     display: flex;
     flex-direction: column;
