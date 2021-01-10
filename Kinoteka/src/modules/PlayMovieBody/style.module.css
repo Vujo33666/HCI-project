@@ -7,3 +7,75 @@
     flex-direction: column;
     align-items: center;
 }
+
+.playMovieDescription {
+    width: 100%;
+    height: fit-content;
+    margin: 0vh 0vw 5vh 0vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movieInfo {
+    width: 70%;
+    height: fit-content;
+    padding: 0% 0% 0% 5%;
+    margin: 0% 0% 0% 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255);
+}
+
+.movieInfo .movieName {
+    width: fit-content;
+    height: fit-content;
+    padding: 0% 0% 0% 0%;
+    margin: 0vh 0vw 1vh 0vw;
+    font-size: 5vh;
+}
+
+.movieInfo .movieCathegory {
+    width: fit-content;
+    height: fit-content;
+    padding: 0% 0% 0% 0%;
+    margin: 0vh 0vw 1vh 0vw;
+}
+
+.movieInfo .movieDuration {
+    width: fit-content;
+    height: fit-content;
+    padding: 0% 0% 0% 0%;
+    margin: 0vh 0vw 1vh 0vw;
+}
+
+.movieInfo .movieRating {
+    width: 80%;
+    height: fit-content;
+    padding: 0% 10% 0% 10%;
+    margin: 0vh 0vw 1vh 0vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movieInfo .movieDescription {
+    width: calc(100% - 4vh);
+    height: 20vh;
+    padding: 2vh;
+    margin: 0vh 0vw 0vh 0vw;
+
+    background: rgba(212, 175, 55, 0.8);
+    color: rgba(0, 0, 0);
+
+    border-radius: 2vh;
+}

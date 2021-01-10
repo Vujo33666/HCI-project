@@ -2,8 +2,8 @@ import React from "react"
 
 import styles from './style.module.css'
 
-const MovieCard = () => (
-    <div className={styles.card}>
+const MovieCard = ({movieCardWhere}) => (
+    <div className={movieCardWhere === "playMovie" ? styles.cardBig : styles.card}>
         <li>
             MOVIE NAME
         </li>
