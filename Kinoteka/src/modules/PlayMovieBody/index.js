@@ -3,8 +3,9 @@ import React from 'react'
 import styles from './style.module.css'
 import Quote from '../../components/Quote'
 import PlayMoviePicture from '../../components/PlayMovieBackground'
-import MovieCard from '../../components/MovieCard'
 import Rate from '../../components/Rate'
+import Button from '../../components/Button'
+import CommentsPool from '../../components/CommentsPool'
 
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
@@ -32,10 +33,24 @@ const PlayMovieBody = () => (
                     <Rate text="IMDB Ocjena"/>
                     <Rate text="Ocjenite Sami"/>
                 </ul>
+                <ul className={styles.movieAddButtons}>
+                    <Button activeButton="watchLater"/>
+                    <Button activeButton="addToFavourites"/>
+                </ul>
             </section>
             <section className={styles.movieDescription}>
                     Movie Description...
             </section>
+        </div>
+        <div className={styles.commentsSection}>
+            <div className={styles.commentsIntroMessage}>
+                <div className={styles.verticalLine}/>
+                <div className={styles.commentsMessage}>
+                    { 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }
+                </div>
+                <div className={styles.verticalLine}/>
+            </div>
+            <CommentsPool />
         </div>
     </div>
 )

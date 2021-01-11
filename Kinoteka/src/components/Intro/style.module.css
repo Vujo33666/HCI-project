@@ -87,3 +87,118 @@
 
     margin-bottom: 20vh;
 }
+
+.forumIntro {
+    width: 100vw;
+    height: 92vh;
+    margin-bottom: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    white-space: pre-line;
+    text-align: center;
+        
+    font-size: 5vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.forumIntro  .forumLandingMessage1 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0vh 0vw 2vh 0vw;
+}
+
+.forumIntro  .forumLandingMessage2 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0vh 0vw 3vh 0vw;
+
+    font-size: 3.5vh;
+}
+
+.forumIntro  .forumLandingButtons {
+    width: 400px;
+    height: fit-content;
+    margin: 0vh 0vw 2vh 0vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    translate: scale(2);
+}
+
+.prijavaRegistracijaIntro {
+    width: 90vw;
+    height: 50vh;
+    padding: 16vh 5vw 16vh 5vw;
+    margin: 0%;
+}
+
+.prijavaRegistracijaIntro2 {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prijavaRegistracijaIntro .prijava {
+    height: calc(100% - 13vh);
+    width: 40vw;
+    padding: 5vh 0vw 8vh 0vw;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prijavaRegistracijaIntro .prijava .introMessageSignIn{
+    width: 100%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0%;
+
+    font-size: 3vh;
+    text-align: center;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 1vh rgba(0, 0, 0, 1);
+    filter: drop-shadow(0px 0px 1vh rgba(0, 0, 0, 1));
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+}
+
+.prijavaRegistracijaIntro .registracija {
+    height: 100%;
+    width: 40vw;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prijavaRegistracijaIntro .veritcalLine {
+    height: 100%;
+    width: 2vw;
+    padding: 0%;
+    margin: 0vh 4vw 0vh 4vw;
+
+    border-radius: 2vh;
+    background: rgba(212, 175, 55, 0.8);
+}
