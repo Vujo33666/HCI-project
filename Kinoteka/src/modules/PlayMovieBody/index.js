@@ -3,8 +3,8 @@ import React from 'react'
 import styles from './style.module.css'
 import Quote from '../../components/Quote'
 import PlayMoviePicture from '../../components/PlayMovieBackground'
-import MovieCard from '../../components/MovieCard'
 import Rate from '../../components/Rate'
+import CommentsPool from '../../components/CommentsPool'
 
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
@@ -45,6 +45,7 @@ const PlayMovieBody = () => (
                 </div>
                 <div className={styles.verticalLine}/>
             </div>
+            <CommentsPool />
         </div>
     </div>
 )
