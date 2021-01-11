@@ -82,3 +82,43 @@
     background: rgba(212, 175, 55, 0.8);
     color: rgba(0, 0, 0);
 }
+
+.playMovieBody .commentsSection {
+    width: 100%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0vh 0vw 5vh 0vw;
+}
+
+.playMovieBody .commentsSection .commentsIntroMessage {
+    width: 100%;
+    height: fit-content;
+    padding: 3vh 0vw 3vh 0vw;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playMovieBody .commentsSection .commentsIntroMessage .verticalLine {
+    height: 10px;
+    width: 25%;
+    padding: 0%;
+    margin: 0%;
+
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2vh;
+}
+
+.playMovieBody .commentsSection .commentsIntroMessage .commentsMessage {
+    height: fit-content;
+    width: 50%;
+
+    white-space: pre-line;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.2vh;
+    font-family: "Righteous";
+}

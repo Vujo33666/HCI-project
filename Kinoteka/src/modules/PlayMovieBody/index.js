@@ -37,6 +37,15 @@ const PlayMovieBody = () => (
                     Movie Description...
             </section>
         </div>
+        <div className={styles.commentsSection}>
+            <div className={styles.commentsIntroMessage}>
+                <div className={styles.verticalLine}/>
+                <div className={styles.commentsMessage}>
+                    { 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }
+                </div>
+                <div className={styles.verticalLine}/>
+            </div>
+        </div>
     </div>
 )
 
