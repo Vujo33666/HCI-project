@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './style.module.css'
 import SearchBar from '../SearchBar'
 import Quote from '../Quote'
+import Button from '../Button'
 import CathegoryPool from '../CathegoryPool'
 
 const Intro = ({activeIntro}) => {
@@ -34,6 +35,23 @@ const Intro = ({activeIntro}) => {
     }
     else if (activeIntro === "forumIntro") {
         introClassName = styles.forumIntro
+        intro = <div className={styles.forumIntro}>
+                    <div className={styles.forumLandingMessage1}>
+                        { 'DOBRODOŠLI NA KINOTEKIN FORUM.\n*SMILEY FACE*' }
+                    </div>
+                    <div className={styles.forumLandingMessage2}>
+                        PRIJAVITE SE DA BUDETE NJEGOV DIO.
+                    </div>
+                    <div className={styles.forumLandingButtons}>
+                        <Button activeButton="signInBig" className={styles.forumLandingButton}/>
+                        <Button activeButton="signUpBig" className={styles.forumLandingButton}/>
+                    </div>
+                    <Quote 
+                        active = "landingQuote"
+                        quoteText = { 'When people ask me if I went to film school I tell them:\n"No, I went to films".' }
+                        quoteBy = "- Quentin Tarantino"
+                    />
+                </div>
     }
     else {
         introClassName = styles.intro

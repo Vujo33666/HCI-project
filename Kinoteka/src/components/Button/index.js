@@ -14,8 +14,16 @@ const Button = ({onClick, activeButton}) => {
         buttonClassName = styles.signIn
         buttonText = "prijava"
     }
+    else if (activeButton === "signInBig") {
+        buttonClassName = styles.signInBig
+        buttonText = "prijava"
+    }
     else if (activeButton === "signUp") {
         buttonClassName = styles.signUp
+        buttonText = "registracija"
+    }
+    else if (activeButton === "signUpBig") {
+        buttonClassName = styles.signUpBig
         buttonText = "registracija"
     }
     else if (activeButton === "edit") {
