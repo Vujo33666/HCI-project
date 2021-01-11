@@ -4,6 +4,7 @@ import styles from './style.module.css'
 import Quote from '../../components/Quote'
 import PlayMoviePicture from '../../components/PlayMovieBackground'
 import Rate from '../../components/Rate'
+import Button from '../../components/Button'
 import CommentsPool from '../../components/CommentsPool'
 
 const PlayMovieBody = () => (
@@ -31,6 +32,10 @@ const PlayMovieBody = () => (
                     <Rate text="Ocjene Korisnika"/>
                     <Rate text="IMDB Ocjena"/>
                     <Rate text="Ocjenite Sami"/>
+                </ul>
+                <ul className={styles.movieAddButtons}>
+                    <Button activeButton="watchLater"/>
+                    <Button activeButton="addToFavourites"/>
                 </ul>
             </section>
             <section className={styles.movieDescription}>
