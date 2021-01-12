@@ -11,19 +11,11 @@ const Button = ({onClick, activeButton}) => {
     let buttonExtras = ""
 
     if (activeButton === "signIn") {
-        buttonClassName = styles.signIn
-        buttonText = "prijava"
-    }
-    else if (activeButton === "signInBig") {
-        buttonClassName = styles.signInBig
+        buttonClassName = styles.signInUp
         buttonText = "prijava"
     }
     else if (activeButton === "signUp") {
-        buttonClassName = styles.signUp
-        buttonText = "registracija"
-    }
-    else if (activeButton === "signUpBig") {
-        buttonClassName = styles.signUpBig
+        buttonClassName = styles.signInUp
         buttonText = "registracija"
     }
     else if (activeButton === "edit") {

@@ -42,8 +42,8 @@ const Intro = ({activeIntro}) => {
                         PRIJAVITE SE DA BUDETE NJEGOV DIO.
                     </div>
                     <div className={styles.forumLandingButtons}>
-                        <Button activeButton="signInBig" className={styles.forumLandingButton}/>
-                        <Button activeButton="signUpBig" className={styles.forumLandingButton}/>
+                        <Button activeButton="signIn" className={styles.forumLandingButton}/>
+                        <Button activeButton="signUp" className={styles.forumLandingButton}/>
                     </div>
                     <Quote 
                         active = "landingQuote"
@@ -57,7 +57,7 @@ const Intro = ({activeIntro}) => {
                     <div className={styles.prijava}>
                         <InfoTab text="Korisničko ime:"/>
                         <InfoTab text="Lozinka:"/>
-                        <Button activeButton="signInBig"/>
+                        <Button activeButton="signIn"/>
                         <div className={styles.introMessageSignIn}>
                             NEMATE RAČUN? REGISTRIRAJTE SE. *SMILEY FACE*
                         </div>
@@ -69,7 +69,7 @@ const Intro = ({activeIntro}) => {
                         <InfoTab text="Email:"/>
                         <InfoTab text="Korisničko ime:"/>
                         <InfoTab text="Lozinka:"/>
-                        <Button activeButton="signUpBig"/>
+                        <Button activeButton="signUp"/>
                     </div>
                 </div>
     }

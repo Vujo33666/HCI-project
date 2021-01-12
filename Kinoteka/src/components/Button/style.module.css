@@ -2,105 +2,28 @@
     display: none;
 }
 
-.signIn {
-    list-style: none;
-
-    width: 100px;
-    height: 30px;
-
+.signInUp {
+    width: 22vh;
+    height: 8vh;
     padding: 0px;
     margin: 0px;
-    border: 0px;
-
-    border-radius: 5px;
+    border: 0px;    
+        
+    list-style: none;
+    font-size: 3vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    background: rgba(212, 175, 55, 0.8);
+    border-radius: 2vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
-        
-    font-size: 12px;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    background: rgba(212, 175, 55, 0.8);
 }
 
-.signInBig {
-    list-style: none;
-
-    width: 180px;
-    height: 60px;
-
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        
-    font-size: 24px;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    background: rgba(212, 175, 55, 0.8);
-}
-
-.signIn:hover ,.signInBig:hover {
-    color: rgba(0,0,0,0.8);
+.signInUp:hover {
     background: rgba(212, 175, 55, 0.5);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.signUp {
-    list-style: none;
-
-    width: 100px;
-    height: 30px;
-
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-
-    border-radius: 5px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        
-    font-size: 12px;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    background: rgba(212, 175, 55, 0.8);
-}
-
-.signUpBig {
-    list-style: none;
-
-    width: 180px;
-    height: 60px;
-
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-        
-    font-size: 24px;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    background: rgba(212, 175, 55, 0.8);
-}
-
-.signUp:hover, .signUpBig:hover {
-    color: rgba(0,0,0,0.8);
-    background: rgba(212, 175, 55, 0.5);
-    border-radius: 10px;
+    border-radius: 2vh;
     cursor: pointer;
 }
 
@@ -120,7 +43,7 @@
     align-items: center;
     justify-content: center;
         
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-family: "Righteous";
     text-transform: uppercase;
     background: rgba(212, 175, 55, 0.8);

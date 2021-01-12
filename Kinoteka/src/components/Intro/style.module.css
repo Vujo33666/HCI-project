@@ -123,15 +123,13 @@
 }
 
 .forumIntro  .forumLandingButtons {
-    width: 400px;
+    width: 50vh;
     height: fit-content;
     margin: 0vh 0vw 2vh 0vw;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    translate: scale(2);
 }
 
 .prijavaRegistracijaIntro {
