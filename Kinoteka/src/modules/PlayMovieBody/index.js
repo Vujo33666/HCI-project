@@ -6,6 +6,7 @@ import PlayMoviePicture from '../../components/PlayMovieBackground'
 import Rate from '../../components/Rate'
 import Button from '../../components/Button'
 import CommentsPool from '../../components/CommentsPool'
+import ContentSeparator from '../../components/ContentSeparator'
 
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
@@ -43,13 +44,7 @@ const PlayMovieBody = () => (
             </section>
         </div>
         <div className={styles.commentsSection}>
-            <div className={styles.commentsIntroMessage}>
-                <div className={styles.verticalLine}/>
-                <div className={styles.commentsMessage}>
-                    { 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }
-                </div>
-                <div className={styles.verticalLine}/>
-            </div>
+            <ContentSeparator separatorText={ 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }/>
             <CommentsPool />
         </div>
     </div>
