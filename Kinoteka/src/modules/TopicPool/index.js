@@ -7,7 +7,6 @@ import Quote from '../../components/Quote'
 import Button from '../../components/Button'
 
 const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
-
     if(topicPoolWhere === "forum") {
         return <div className={styles.topic} >
                     <div className={styles.topicSeparator} >

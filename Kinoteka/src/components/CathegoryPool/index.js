@@ -22,9 +22,8 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
                         Akcijski
                     </div>
                 </div>
-                <Button 
-                    className ={styles.buttonDrop}
-                    activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDownBig'}
+                <Button
+                    activeButton = {cathegoryPoolWhere === "landing" ? '' : 'dropDown'}
                     onClick = {() => setValue(!isActive)}
                 />
             </div>

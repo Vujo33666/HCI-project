@@ -44,16 +44,7 @@ const Button = ({onClick, activeButton}) => {
     else if (activeButton === "dropDown") {
         buttonClassName = styles.dropDown
         buttonText = ""
-        buttonExtras = <ul>
-            <li className={styles.verticalLine}/>
-            <li className={styles.verticalLine}/>
-            <li className={styles.verticalLine}/>
-        </ul>
-    }
-    else if (activeButton === "dropDownBig") {
-        buttonClassName = styles.dropDownBig
-        buttonText = ""
-        buttonExtras = <ul>
+        buttonExtras = <ul className={styles.verticalLinePool}>
             <li className={styles.verticalLine}/>
             <li className={styles.verticalLine}/>
             <li className={styles.verticalLine}/>
