@@ -8,7 +8,7 @@ import NavigationBar from '../NavigationBar'
 import Navigation from '../Navigation'
 import Intro from '../Intro'
 
-const Background = ({activeIntro}) => {
+const Background = ({activeTab, activeIntro}) => {
     const data = useStaticQuery(graphql`
     query {
         desktop: file(relativePath: { eq: "Background.png" }) {
@@ -30,7 +30,10 @@ const Background = ({activeIntro}) => {
                 fluid={data.desktop.childImageSharp.fluid}
             >
                 <div>
-                    <NavigationBar navigationBarWhere = "landing"/>
+                    <NavigationBar 
+                        activeTab={activeTab}
+                        navigationBarWhere = "landing"
+                    />
                     <Intro activeIntro={activeIntro}/>
                 </div>
             </BackgroundImage>
@@ -42,7 +45,10 @@ const Background = ({activeIntro}) => {
                 fluid={data.desktop.childImageSharp.fluid}
             >
                 <div>
-                    <Navigation navigationBarWhere = "navigation"/>
+                    <Navigation 
+                        activeTab={activeTab}
+                        navigationBarWhere = "navigation"
+                    />
                     <Intro activeIntro={activeIntro}/>
                 </div>
             </BackgroundImage>

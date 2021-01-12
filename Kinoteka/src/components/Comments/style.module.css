@@ -9,6 +9,21 @@
     border-radius: 2vh;
     font-size: 2vh;
     font-family: "Righteous";
+    line-height: 1.5em;
+}
+
+.discussionQuestion{
+    width: fit-content;
+    height: fit-content;
+    padding: 2vh;
+    margin: 0vh 0vw 2vh 0vw;
+
+    color: rgba(0, 0, 0, 1);
+    background:  rgba(208, 75, 197, 0.8);
+    border-radius: 2vh;
+    font-size: 2vh;
+    font-family: "Righteous";
+    line-height: 1.5em;
 }
 
 .writeComment {
@@ -22,6 +37,7 @@
     border-radius: 2vh;
     font-size: 2vh;
     font-family: "Righteous";
+    line-height: 1.5em;
 }
 
 .writeComment:hover {
