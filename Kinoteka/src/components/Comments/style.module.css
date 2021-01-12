@@ -7,20 +7,20 @@
     color: rgba(0, 0, 0, 1);
     background:  rgba(55, 212, 203, 0.8);
     border-radius: 2vh;
-    font-size: 2.8vh;
+    font-size: 2vh;
     font-family: "Righteous";
 }
 
 .writeComment {
     width: calc(100% - 4vh);
     height: fit-content;
-    padding: 2vh 2vh 10vh 2vh;
+    padding: 2vh 2vh 8vh 2vh;
     margin: 2vh 0vw 0vh 0vw;
 
     color: rgba(0, 0, 0, 1);
     background: rgba(212, 175, 55, 0.8);
     border-radius: 2vh;
-    font-size: 2.8vh;
+    font-size: 2vh;
     font-family: "Righteous";
 }
 

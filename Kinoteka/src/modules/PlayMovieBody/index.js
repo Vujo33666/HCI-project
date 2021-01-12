@@ -11,9 +11,7 @@ import ContentSeparator from '../../components/ContentSeparator'
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
         <Quote 
-            quoteText = {
-                'Jojo’s mom: “Love is the strongest thing in the world.”\nJojo: “I think you will find that metal is the strongest thing in the world, followed closly by dynamite and then muscles.”'
-            }
+            quoteText = { 'Jojo’s mom: “Love is the strongest thing in the world.”\nJojo: “I think you will find that metal is the strongest thing in the world, followed closly by dynamite and then muscles.”' }
             quoteBy = "JOJO RABBIT"
             active = "playMovie"
         />
@@ -44,7 +42,10 @@ const PlayMovieBody = () => (
             </section>
         </div>
         <div className={styles.commentsSection}>
-            <ContentSeparator separatorText={ 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }/>
+            <div className={styles.cantSeeCommentsMessage}>
+                *komentari su onemogućeni za neprijavljene korisnike*
+            </div>
+            <ContentSeparator separatorText="komentari" className={styles.contentSeparator}/>
             <CommentsPool />
         </div>
     </div>

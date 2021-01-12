@@ -102,3 +102,18 @@
     padding: 0%;
     margin: 0vh 0vw 5vh 0vw;
 }
+
+.playMovieBody .commentsSection .cantSeeCommentsMessage {
+    width: 100%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0vh 0vw 0vh 0vw;
+
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    justify-content: center;
+}

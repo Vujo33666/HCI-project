@@ -1,4 +1,6 @@
 .commentsPool {
     width: 100%;
     height: fit-content;
+
+    line-height: 1.5em;
 }
