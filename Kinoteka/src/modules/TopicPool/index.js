@@ -6,7 +6,7 @@ import ContentSeparator from '../../components/ContentSeparator'
 import Quote from '../../components/Quote'
 import Button from '../../components/Button'
 
-const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
+const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => (
     <div className={styles.topic} >
         <div className={styles.topicSeparator} >
             <ContentSeparator separatorText={separatorText}/>
@@ -15,7 +15,7 @@ const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
             <Quote 
                 active="playMovie"
                 quoteText={quoteText}
-                quoteBy={quoteText}
+                quoteBy={quoteBy}
             />
             <DiscussionTab topicText="rasprava 1" />
             <DiscussionTab topicText="rasprava 2" />
@@ -23,6 +23,6 @@ const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
             <Button activeButton="readMore" />
         </div>
     </div>
-}
+)
 
 export default TopicPool
