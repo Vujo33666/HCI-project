@@ -91,7 +91,7 @@
 .forumIntro {
     width: 100vw;
     height: 82vh;
-    margin-bottom: 5vh;
+    margin: 0%;
 
     display: flex;
     flex-direction: column;
