@@ -3,9 +3,12 @@ import React from 'react'
 import Background from '../../components/BackgroundImage'
 import styles from './style.module.css'
 
-const Landing = ({activeIntro}) => (
+const Landing = ({activeTab, activeIntro}) => (
     <section className={styles.landing}>
-        <Background activeIntro={activeIntro}/>
+        <Background
+            activeTab={activeTab}
+            activeIntro={activeIntro}
+        />
     </section>
 )
  

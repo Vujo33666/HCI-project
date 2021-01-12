@@ -6,13 +6,12 @@ import PlayMoviePicture from '../../components/PlayMovieBackground'
 import Rate from '../../components/Rate'
 import Button from '../../components/Button'
 import CommentsPool from '../../components/CommentsPool'
+import ContentSeparator from '../../components/ContentSeparator'
 
 const PlayMovieBody = () => (
     <div className={styles.playMovieBody} >
         <Quote 
-            quoteText = {
-                'Jojo’s mom: “Love is the strongest thing in the world.”\nJojo: “I think you will find that metal is the strongest thing in the world, followed closly by dynamite and then muscles.”'
-            }
+            quoteText = { 'Jojo’s mom: “Love is the strongest thing in the world.”\nJojo: “I think you will find that metal is the strongest thing in the world, followed closly by dynamite and then muscles.”' }
             quoteBy = "JOJO RABBIT"
             active = "playMovie"
         />
@@ -34,22 +33,25 @@ const PlayMovieBody = () => (
                     <Rate text="Ocjenite Sami"/>
                 </ul>
                 <ul className={styles.movieAddButtons}>
-                    <Button activeButton="watchLater"/>
-                    <Button activeButton="addToFavourites"/>
+                    <Button 
+                        className={styles.movieAddButton}
+                        activeButton="watchLater"
+                    />
+                    <Button 
+                        className={styles.movieAddButton}
+                        activeButton="addToFavourites"
+                    />
                 </ul>
             </section>
             <section className={styles.movieDescription}>
-                    Movie Description...
+                Movie Description...
             </section>
         </div>
         <div className={styles.commentsSection}>
-            <div className={styles.commentsIntroMessage}>
-                <div className={styles.verticalLine}/>
-                <div className={styles.commentsMessage}>
-                    { 'KOMENTARI\n*onemogućeni za neprijavljene korisnike*' }
-                </div>
-                <div className={styles.verticalLine}/>
+            <div className={styles.cantSeeCommentsMessage}>
+                *komentari su onemogućeni za neprijavljene korisnike*
             </div>
+            <ContentSeparator separatorText="komentari" className={styles.contentSeparator}/>
             <CommentsPool />
         </div>
     </div>

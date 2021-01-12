@@ -1,0 +1,28 @@
+.topic {
+    width: 100%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0vh 0vw 5vh 0vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic .topicSeparator{
+    width: 90%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0% 5% 0% 5%;
+}
+
+.topic .topicPool{
+    width: 50%;
+    height: fit-content;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

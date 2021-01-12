@@ -17,7 +17,6 @@ const Rate = ({text}) => {
                         return (
                             <FaStar 
                                 key={ratingValue}
-                                size={16}
                                 className={ratingValue <= rating ? styles.active : styles.notActive}
                                 onClick={() => setRating(rating === ratingValue ? null : ratingValue)}
                             />
@@ -27,7 +26,7 @@ const Rate = ({text}) => {
                         return (
                             <FaStar 
                                 key={ratingValue}
-                                size={16}
+                                className={styles.notActive2}
                             />
                         )
                     }

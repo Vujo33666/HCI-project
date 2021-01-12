@@ -1,33 +1,24 @@
-.quote {
-    width: 650px;
-    height: 150px;
-    padding: 25px;
-
-    background: rgba(212, 175, 55, 0.8);
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 2vh;
-}
-
 .quotePlay {
     width: 95%;
-    height: fit-content;
+    height: 22vh;
     padding: 2.5%;
     margin: 0vh 0vw 5vh 0vw;
 
     background: rgba(212, 175, 55, 0.8);
+    border-radius: 2vh;
 
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
     align-items: center;
+}
 
-    border-radius: 2vh;
+.landingQuote {
+    width: 50vw;
+    height:fit-content;
+    padding: 0vh 25vw 0vh 25vw;
+    border: 0px;
+    margin: 0vh 0vw 5vh 0vw;
 }
 
 .quoteHide {
@@ -35,104 +26,34 @@
 }
 
 .quoteText {
+    width: 80%;
+    padding: 0%;
+    margin: 0% 10% 0% 10%;
+
     list-style: none;
-
-    width: 90%;
-    padding: 1% 5% 1% 5%;
-
-    font-size: 28px;
-    text-align: center;
-    font-family: "Freestyle Script";
-    color: rgba(0,0,0);
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.quoteBy {
-    list-style: none;
-
-    width: 84%;
-    padding: 0% 5% 0% 5%;
-
-    font-size: 28px;
-    text-align: center;
-    font-family: "Freestyle Script";
-    color: rgba(0,0,0);
-}
-
-.quotePlay .quoteText {
-    list-style: none;
-
-    width: 100%;
-    padding: 0% 0% 1% 0%;
-
-    font-size: 28px;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
     white-space: pre-line;
 }
 
-.quotePlay .quoteBy {
-    list-style: none;
-
-    width: 100%;
+.quoteBy {
+    width: 80%;
     padding: 0%;
+    margin: 0% 10% 0% 10%;
 
-    font-size: 28px;
+    list-style: none;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
 }
 
-.landingQuote {
-    width: 50vw;
-    height:fit-content;
+.landingQuote .quoteText, .landingQuote .quoteBy{
+    width: 100%;
+    margin: 0%;
 
-    padding: 0%;
-    border: 0px;
-    margin: 1vh 0vw 0vw 0vw;
-
-    display: flex;
-    flex-direction: column; 
-
-    justify-content: center;
-    align-items: center;
-}
-
-
-.landingQuote .quoteText {
-    list-style: none;
-
-    width: 90%;
-    padding: 1% 5% 1% 5%;
-
-    font-size: 4.2vh;
-    text-align: center;
-    font-family: "Freestyle Script";
     text-transform: none;
     color: rgba(212, 175, 55);
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.landingQuote .quoteBy {
-    list-style: none;
-
-    width: 90%;
-    padding: 0% 5% 0% 5%;
-
-    font-size: 4.2vh;
-    text-align: center;
-    font-family: "Freestyle Script";
-    text-transform: none;
-    color: rgba(212, 175, 55);
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
 }

@@ -1,0 +1,33 @@
+.contentSeparator {
+    width: 100%;
+    height: fit-content;
+    padding: 0vh 0vw 5vh 0vw;
+    margin: 0%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentSeparator .verticalLine {
+    height: 1.5vh;
+    width: calc(50% - 2vw);
+    padding: 0%;
+    margin: 0%;
+
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2vh;
+}
+
+.contentSeparator .commentsMessage {
+    height: fit-content;
+    width: fit-content;
+    padding: 0vh 2vw 0vh 2vw;
+    
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 4vh;
+    font-family: "Righteous";
+}

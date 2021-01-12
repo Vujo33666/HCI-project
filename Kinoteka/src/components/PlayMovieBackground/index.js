@@ -25,7 +25,7 @@ const PlayMoviePicture = () => {
           fluid={data.desktop.childImageSharp.fluid}
         >
             <div className={styles.playButtonCover}>
-                <FaPlayCircle className={styles.playCircleButton} size={120} color='rgba(212, 175, 55, 0.9)' />
+                <FaPlayCircle className={styles.playCircleButton} color='rgba(212, 175, 55, 0.9)' />
             </div>
         </BackgroundImage>
     )

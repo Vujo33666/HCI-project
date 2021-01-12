@@ -1,0 +1,22 @@
+.discussionTab {
+    width: 100%;
+    height: 6vh;
+    padding: 0%;
+    border: 0%;
+    margin: 0vh 0vw 5vh 0vw;
+
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discussionTab:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+}

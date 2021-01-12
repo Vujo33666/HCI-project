@@ -4,9 +4,9 @@ import Landing from '../modules/Landing'
 
 const prijavaRegistracija = () => (
     <main>
-        <Landing 
+        <Landing
             activeTab="Prijava"
-            activeIntro="prijavaRegistracija"
+            activeIntro="korisnickiProfil"
         />
     </main>
 )

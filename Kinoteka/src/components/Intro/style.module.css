@@ -79,7 +79,7 @@
 
 .cathegoryIntro {
     width: 100vw;
-    height: 92vh;
+    height: 67vh;
 
     display: flex;
     justify-content: center;
@@ -90,8 +90,8 @@
 
 .forumIntro {
     width: 100vw;
-    height: 92vh;
-    margin-bottom: 5vh;
+    height: 82vh;
+    margin: 0%;
 
     display: flex;
     flex-direction: column;
@@ -123,28 +123,19 @@
 }
 
 .forumIntro  .forumLandingButtons {
-    width: 400px;
+    width: 50vh;
     height: fit-content;
     margin: 0vh 0vw 2vh 0vw;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    translate: scale(2);
 }
 
 .prijavaRegistracijaIntro {
     width: 90vw;
     height: 50vh;
-    padding: 16vh 5vw 16vh 5vw;
-    margin: 0%;
-}
-
-.prijavaRegistracijaIntro2 {
-    width: 100%;
-    height: 100%;
-    padding: 0%;
+    padding: 10vh 5vw 27vh 5vw;
     margin: 0%;
 
     display: flex;
@@ -193,12 +184,118 @@
     align-items: center;
 }
 
-.prijavaRegistracijaIntro .veritcalLine {
+.prijavaRegistracijaIntro .verticalLine {
     height: 100%;
-    width: 2vw;
+    width: 1vw;
     padding: 0%;
-    margin: 0vh 4vw 0vh 4vw;
+    margin: 0vh 4.5vw 0vh 4.5vw;
 
     border-radius: 2vh;
     background: rgba(212, 175, 55, 0.8);
+}
+
+.korisnickiProfilIntro .verticalLine{
+    height: 100%;
+    width: 1vw;
+    padding: 0%;
+    margin: 0%;
+
+    border-radius: 1vh;
+    background: rgba(212, 175, 55, 0.8);
+}
+
+.korisnickiProfilIntro {
+    width: 90vw;
+    height: 40vh;
+    padding: 15vh 5vw 32vh 5vw;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo {
+    height: 100%;
+    width: 40vw;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .pictureName {
+    width: 80%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .pictureName .profilePicture{
+    width: 15vh;
+    height: 15vh;
+    margin: 0vh 5vh 0vh 0vh;
+
+    white-space: pre-line;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(212, 175, 55, 0.8);
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.korisnickiProfilIntro .userInfo .pictureName .profileName{
+    width: calc(100% - 20vh);
+    height: 6vh;
+
+    border-radius: 3vh;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .emailTab {
+    width: 80%;
+    height: 4vh;
+
+    color: rgba(0, 0, 0, 1);
+    background:  rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0px 0px 1vh rgba(0, 0, 0, 1));
+    border-radius: 2vh;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userLists {
+    height: 100%;
+    width: 40vw;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }

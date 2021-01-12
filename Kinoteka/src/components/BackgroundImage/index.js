@@ -5,9 +5,10 @@ import BackgroundImage from "gatsby-background-image"
 import styles from './style.module.css'
 
 import NavigationBar from '../NavigationBar'
+import Navigation from '../Navigation'
 import Intro from '../Intro'
 
-const Background = ({activeIntro}) => {
+const Background = ({activeTab, activeIntro}) => {
     const data = useStaticQuery(graphql`
     query {
         desktop: file(relativePath: { eq: "Background.png" }) {
@@ -19,18 +20,41 @@ const Background = ({activeIntro}) => {
         }
     }
     `)
-    
-    return (
-        <BackgroundImage
-          className={styles.background}
-          fluid={data.desktop.childImageSharp.fluid}
-        >
-            <div>
-                <NavigationBar navigationBarWhere = "landing"/>
-                <Intro activeIntro={activeIntro}/>
-            </div>
-        </BackgroundImage>
-    )
+
+    let intro = ''
+
+    if (activeIntro === "landingIntro") {
+        intro =
+            <BackgroundImage
+                className={styles.background}
+                fluid={data.desktop.childImageSharp.fluid}
+            >
+                <div>
+                    <NavigationBar 
+                        activeTab={activeTab}
+                        navigationBarWhere = "landing"
+                    />
+                    <Intro activeIntro={activeIntro}/>
+                </div>
+            </BackgroundImage>
+    }
+    else {
+        intro =
+            <BackgroundImage
+                className={styles.background}
+                fluid={data.desktop.childImageSharp.fluid}
+            >
+                <div>
+                    <Navigation 
+                        activeTab={activeTab}
+                        navigationBarWhere = "navigation"
+                    />
+                    <Intro activeIntro={activeIntro}/>
+                </div>
+            </BackgroundImage>
+    }
+
+    return intro
 }
 
 export default Background

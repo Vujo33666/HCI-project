@@ -25,6 +25,11 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.playMovieImage .playButtonCover .playCircleButton:hover{
+.playMovieImage .playButtonCover .playCircleButton {
+    width: 18vh;
+    height: 18vh;
+}
+
+.playMovieImage .playButtonCover .playCircleButton:hover {
     transform: scale(1.1);
 }
