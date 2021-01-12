@@ -12,7 +12,6 @@ const Intro = ({activeIntro}) => {
     let intro = ''
 
     if (activeIntro === "landingIntro") {
-        introClassName = styles.landingIntro
         intro = <div className={styles.landingIntro}>
                     <h1>
                         <p>LOGO</p>
@@ -29,13 +28,11 @@ const Intro = ({activeIntro}) => {
                 </div>
     }
     else if (activeIntro === "cathegoryIntro") {
-        introClassName = styles.cathegoryIntro
         intro = <div className={styles.cathegoryIntro}>
                     <CathegoryPool cathegoryPoolWhere="landing" textForIntro="Odaberite Kategoriju:"/>
                 </div>
     }
     else if (activeIntro === "forumIntro") {
-        introClassName = styles.forumIntro
         intro = <div className={styles.forumIntro}>
                     <div className={styles.forumLandingMessage1}>
                         { 'DOBRODOŠLI NA KINOTEKIN FORUM.\n*SMILEY FACE*' }
@@ -55,8 +52,7 @@ const Intro = ({activeIntro}) => {
                 </div>
     }
     else if (activeIntro === "prijavaRegistracija") {
-        introClassName = styles.prijavaRegistracijaIntro
-        intro = <div className={styles.prijavaRegistracijaIntro2}>
+        intro = <div className={styles.prijavaRegistracijaIntro}>
                     <div className={styles.prijava}>
                         <InfoTab text="Korisničko ime:"/>
                         <InfoTab text="Lozinka:"/>
@@ -80,9 +76,7 @@ const Intro = ({activeIntro}) => {
         introClassName = styles.intro
     }
 
-    return  <div className={introClassName}>
-        {intro}
-    </div>
+    return  intro
 }
 
 export default Intro
