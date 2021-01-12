@@ -1,45 +1,50 @@
 .rate {
-    width: 110px;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0%;
+    margin: 0vh 0vw 2vh 0vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .rate .stars {
+    width: 15vh;
+    height: fit-content;
+    padding: 0vh 0vw 1vh 0vw;
+    border: 0px;
+    margin: 0%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
-    margin: 0% 5% 0% 5%;
-
     color: rgba(255,255,255);
+}
+
+.rate .stars .active, .rate .stars .notActive, .rate .stars .notActive2{
+    width: 2.2vh;
+    height: 2.2vh;
 }
 
 .rate .stars .active {
     color: rgba(212, 175, 55);
 }
 
-.rate .stars .active:hover {
-    cursor: pointer;
-}
-
-.rate .stars .notActive:hover {
+.rate .stars .active:hover, .rate .stars .notActive:hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 .rate .text {
-    list-style: none;
-    
-    height: 16px;
+    width: fit-content;
+    height: fit-content;
 
-    font-size: 12px;
+    list-style: none;
+    font-size: 1.8vh;
     font-family: "Righteous";
     text-transform: uppercase;
     color: rgba(255,255,255);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

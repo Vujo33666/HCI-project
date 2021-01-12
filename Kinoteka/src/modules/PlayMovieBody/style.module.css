@@ -10,7 +10,7 @@
 
 .playMovieDescription {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     margin: 0vh 0vw 5vh 0vw;
 
     display: flex;
@@ -20,7 +20,7 @@
 }
 
 .playMovieDescription .movieInfo {
-    width: 25%;
+    width: 30%;
     height: 100%;
     padding: 0vh 0vw 0vh 0vw;
     margin: 0%;
@@ -41,58 +41,68 @@
     height: fit-content;
 
     text-align: center;
-    padding: 0% 0% 0% 0%;
-    margin: 0%;
+    padding: 0%;
+    margin: 0vh 0vw 1vh 0vw;
     font-size: 5vh;
+    white-space: nowrap;
 }
 
 .movieInfo .movieCathegory {
     width: fit-content;
     height: fit-content;
-    padding: 0% 0% 0% 0%;
-    margin: 0%;
+    padding: 0%;
+    margin: 0vh 0vw 1vh 0vw;
 }
 
 .movieInfo .movieDuration {
     width: fit-content;
     height: fit-content;
-    padding: 0% 0% 0% 0%;
-    margin: 0%;
+    padding: 0%;
+    margin: 0vh 0vw 1vh 0vw;
 }
 
 .movieInfo .movieRating {
     width: fit-content;
     height: fit-content;
     padding: 0%;
+    margin: 2vh 0vw 0vh 0vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movieInfo .movieAddButtons {
+    width: 100%;
+    height: 12vh;
+    padding: 0%;
     margin: 0%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
-.movieInfo .movieAddButtons {
-    width: 220px;
-    height: fit-content;
-    padding: 0%;
-    margin: 0%;
+.movieInfo .movieAddButtons Button {
+    width: 80%;
+    height: 5vh;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    border-radius: 1.5vh;
 }
 
 .playMovieDescription .movieDescription {
-    width: calc(70% - 6vh);
+    width: calc(65% - 6vh);
     height: calc(100% - 6vh);
     padding: 3vh;
     margin: 0% 0% 0% 5%;
 
     border-radius: 2vh;
 
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     font-family: "Righteous";
-    background: rgba(212, 175, 55, 0.8);
+    background: rgba(212, 175, 55, 0.6);
     color: rgba(0, 0, 0);
 }
 

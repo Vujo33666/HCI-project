@@ -39,7 +39,7 @@ const Button = ({onClick, activeButton}) => {
     else if (activeButton === "addToFavourites") {
         buttonClassName = styles.addToFavourites
         buttonText = "favoriti"
-        buttonExtras = <FaHeart size={16} color='rgb(200, 50, 50)'/>
+        buttonExtras = <FaHeart className={styles.heartIcon} color='rgb(200, 50, 50)'/>
     }
     else if (activeButton === "dropDown") {
         buttonClassName = styles.dropDown

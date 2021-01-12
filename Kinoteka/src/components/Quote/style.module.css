@@ -21,13 +21,11 @@
     margin: 0vh 0vw 5vh 0vw;
 
     background: rgba(212, 175, 55, 0.8);
+    border-radius: 2vh;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
-    border-radius: 2vh;
 }
 
 .quoteHide {
@@ -40,7 +38,7 @@
     width: 90%;
     padding: 1% 5% 1% 5%;
 
-    font-size: 28px;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
@@ -56,7 +54,7 @@
     width: 84%;
     padding: 0% 5% 0% 5%;
 
-    font-size: 28px;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
@@ -68,7 +66,7 @@
     width: 100%;
     padding: 0% 0% 1% 0%;
 
-    font-size: 28px;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);
@@ -81,7 +79,7 @@
     width: 100%;
     padding: 0%;
 
-    font-size: 28px;
+    font-size: 4.2vh;
     text-align: center;
     font-family: "Freestyle Script";
     color: rgba(0,0,0);

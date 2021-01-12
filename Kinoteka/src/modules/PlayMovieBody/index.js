@@ -33,12 +33,18 @@ const PlayMovieBody = () => (
                     <Rate text="Ocjenite Sami"/>
                 </ul>
                 <ul className={styles.movieAddButtons}>
-                    <Button activeButton="watchLater"/>
-                    <Button activeButton="addToFavourites"/>
+                    <Button 
+                        className={styles.movieAddButton}
+                        activeButton="watchLater"
+                    />
+                    <Button 
+                        className={styles.movieAddButton}
+                        activeButton="addToFavourites"
+                    />
                 </ul>
             </section>
             <section className={styles.movieDescription}>
-                    Movie Description...
+                Movie Description...
             </section>
         </div>
         <div className={styles.commentsSection}>
