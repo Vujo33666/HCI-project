@@ -186,7 +186,7 @@
     align-items: center;
 }
 
-.prijavaRegistracijaIntro .veritcalLine {
+.prijavaRegistracijaIntro .verticalLine {
     height: 100%;
     width: 1vw;
     padding: 0%;
@@ -194,4 +194,110 @@
 
     border-radius: 2vh;
     background: rgba(212, 175, 55, 0.8);
+}
+
+.korisnickiProfilIntro .verticalLine{
+    height: 100%;
+    width: 1vw;
+    padding: 0%;
+    margin: 0%;
+
+    border-radius: 1vh;
+    background: rgba(212, 175, 55, 0.8);
+}
+
+.korisnickiProfilIntro {
+    width: 90vw;
+    height: 40vh;
+    padding: 15vh 5vw 32vh 5vw;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo {
+    height: 100%;
+    width: 40vw;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .pictureName {
+    width: 80%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .pictureName .profilePicture{
+    width: 15vh;
+    height: 15vh;
+    margin: 0vh 5vh 0vh 0vh;
+
+    white-space: pre-line;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(212, 175, 55, 0.8);
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.korisnickiProfilIntro .userInfo .pictureName .profileName{
+    width: calc(100% - 20vh);
+    height: 6vh;
+
+    border-radius: 3vh;
+    color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userInfo .emailTab {
+    width: 80%;
+    height: 4vh;
+
+    color: rgba(0, 0, 0, 1);
+    background:  rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0px 0px 1vh rgba(0, 0, 0, 1));
+    border-radius: 2vh;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: "Righteous";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korisnickiProfilIntro .userLists {
+    height: 100%;
+    width: 40vw;
+    padding: 0%;
+    margin: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }

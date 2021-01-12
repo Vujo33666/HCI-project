@@ -6,6 +6,7 @@ import Quote from '../Quote'
 import Button from '../Button'
 import CathegoryPool from '../CathegoryPool'
 import InfoTab from '../InfoTab'
+import UserLists from '../UserLists'
 
 const Intro = ({activeIntro}) => {
     let introClassName = ''
@@ -61,7 +62,7 @@ const Intro = ({activeIntro}) => {
                             NEMATE RAČUN? REGISTRIRAJTE SE. *SMILEY FACE*
                         </div>
                     </div>
-                    <div className={styles.veritcalLine} />
+                    <div className={styles.verticalLine} />
                     <div className={styles.registracija}>
                         <InfoTab text="Ime:"/>
                         <InfoTab text="Prezime:"/>
@@ -69,6 +70,30 @@ const Intro = ({activeIntro}) => {
                         <InfoTab text="Korisničko ime:"/>
                         <InfoTab text="Lozinka:"/>
                         <Button activeButton="signUpBig"/>
+                    </div>
+                </div>
+    }
+    else if (activeIntro === "korisnickiProfil") {
+        intro = <div className={styles.korisnickiProfilIntro}>
+                    <div className={styles.userInfo}>
+                        <div className={styles.pictureName}>
+                            <div className={styles.profilePicture}>
+                                {'*profile\npicture*'}
+                            </div>
+                            <div className={styles.profileName}>
+                                korisničko ime
+                            </div>
+                        </div>
+                        <div className={styles.emailTab}>
+                            email adresa
+                        </div>
+                        <Button activeButton="edit" />
+                    </div>
+                    <div className={styles.verticalLine} />
+                    <div className={styles.userLists}>
+                        <UserLists listText="lista za gledanje" />
+                        <UserLists listText="nedavno pogledano" />
+                        <UserLists listText="omiljeni filmovi" />
                     </div>
                 </div>
     }
