@@ -1,0 +1,17 @@
+.discussionTab {
+    width: 100%;
+    height: 5vh;
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
+
+    font-size: 2vh;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
