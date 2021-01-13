@@ -8,8 +8,8 @@ const NavigationBar = ({activeTab, navigationBarWhere}) => (
     <nav className={navigationBarWhere === "navigation" ? styles.navigationBarNav :  styles.navigationBar}>  
         {
             navigationTabs.map(({tab,to}) => (
-                <Link to={to}>
-                    <li key={tab} className={tab === activeTab ? styles.active : styles.navLiTab}>
+                <Link key={tab} to={to}>
+                    <li className={tab === activeTab ? styles.active : styles.navLiTab}>
                         {tab}
                     </li>
                 </Link>

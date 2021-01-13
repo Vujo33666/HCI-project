@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import styles from './style.module.css'
 import Rate from '../Rate'
 import Button from '../Button'
@@ -11,7 +12,9 @@ const MovieCardDropDown = ({active}) => (
                 Movie Description...
             </li>
             <div className={styles.buttons}>
-                <Button activeButton = 'watchNow'/>
+                <Link to='/gledajFilm'>
+                    <Button activeButton = 'watchNow'/>
+                </Link>
                 <Button activeButton = 'watchLater'/>
                 <Button activeButton = 'addToFavourites'/>
             </div>

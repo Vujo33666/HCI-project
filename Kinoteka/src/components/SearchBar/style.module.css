@@ -19,10 +19,10 @@
 
 .searchBarNav {
     width: 20%;
-    height: 50%;
+    height: 4vh;
     padding: 0%;
     border: 0px;
-    margin: 25% 2% 25% 3%;
+    margin: 2vh 2% 2vh 8%;
 
     display: flex;
     flex-direction: row;
