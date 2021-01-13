@@ -57,31 +57,36 @@
 }
 
 .watchNow {
-    list-style: none;
-
-    width: 100px;
-    height: 30px;
-
+    width: 100%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     border: 0px;
 
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-        
-    font-size: 12px;
+    list-style: none;
+    font-size: 2vh;
     font-family: "Righteous";
     text-transform: uppercase;
     color: rgba(255,255,255);
     background: rgba(0,0,0,0);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .watchNow:hover {
     cursor: pointer;
+}
+
+.watchNow .playCircle{
+    width: 3.5vh;
+    height: 3.5vh;
+    margin-right: 1vh;
+    
+    background-color: rgba(255,255,255,0);
+    color: rgba(212, 175, 55);
 }
 
 .watchNowBig {
@@ -103,22 +108,27 @@
     color: rgba(255,255,255);
     background: rgba(0,0,0,0);
 }
+
 .watchNowBig:hover {
     cursor: pointer;
 }
+
 .watchNowBig .playCircle{
+    width: 5vh;
+    height: 5vh;
     padding: 0px;
     border: 0px;
     margin: 0px;
-    margin-right: 10px;
+    margin-right: 1vh;
     
     border-radius: 50%;
-    background-color: rgba(255,255,255);
-
+    background-color: rgba(255,255,255,0);
     color: rgba(212, 175, 55);
 }
 
 .watchLater {
+    width: 30%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -142,8 +152,8 @@
 }
 
 .addToFavourites {
-    width: 100px;
-    height: 30px;
+    width: 30%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     border: 0px;
@@ -158,7 +168,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .addToFavourites:hover {
@@ -168,8 +178,9 @@
 }
 
 .addToFavourites .heartIcon {
-    height: 4vh;
+    height: 80%;
     width: 4vh;
+    margin-right: 1vh;
 }
 
 .dropDown {

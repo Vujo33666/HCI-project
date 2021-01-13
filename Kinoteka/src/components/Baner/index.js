@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import styles from './style.module.css'
@@ -44,7 +45,9 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         <Rate text="IMDB Ocjena"/>
                     </ul>
                     <ul  className={styles.watchNow}>
-                        <Button activeButton = "watchNowBig"/>
+                        <Link to='/gledajFilm'>
+                            <Button activeButton = "watchNowBig"/>
+                        </Link>
                     </ul>
                     <ul  className={styles.banerScroll}>
                         <ScrollBar />

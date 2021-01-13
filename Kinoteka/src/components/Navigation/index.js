@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import styles from './style.module.css'
 import NavigationBar from '../NavigationBar'
 import SearchBar from '../SearchBar'
@@ -7,8 +8,12 @@ import SearchBar from '../SearchBar'
 const Navigation = ({activeTab, navigationBarWhere}) => (
   <section className={styles.navigation}>
     <div className={styles.navLogoSiteName}>
-      <h1>LOGO</h1>
-      <h2>KINOTEKA</h2>
+        <Link to='/'>
+            <h1>LOGO</h1>
+        </Link>
+        <Link to='/'>
+            <h2>KINOTEKA</h2>
+        </Link>
     </div>
     <NavigationBar activeTab={activeTab} navigationBarWhere = {navigationBarWhere}/>
     <SearchBar searchBarWhere="navigation" />

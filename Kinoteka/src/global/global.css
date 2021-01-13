@@ -16,10 +16,12 @@ body {
   background: rgb(16, 16, 16);
 }
 
-  
+a,
 a:active,
-a:hover{
+a:hover {
   outline-width: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 article,

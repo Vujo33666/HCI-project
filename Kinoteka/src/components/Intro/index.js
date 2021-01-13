@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import styles from './style.module.css'
 import SearchBar from '../SearchBar'
 import Quote from '../Quote'
@@ -42,8 +43,12 @@ const Intro = ({activeIntro}) => {
                         PRIJAVITE SE DA BUDETE NJEGOV DIO.
                     </div>
                     <div className={styles.forumLandingButtons}>
-                        <Button activeButton="signIn" className={styles.forumLandingButton}/>
-                        <Button activeButton="signUp" className={styles.forumLandingButton}/>
+                        <Link to='/prijavaRegistracija'>
+                            <Button activeButton="signIn" className={styles.forumLandingButton}/>
+                        </Link>
+                        <Link to='/prijavaRegistracija'>
+                            <Button activeButton="signUp" className={styles.forumLandingButton}/>
+                        </Link>
                     </div>
                     <Quote 
                         active = "landingQuote"

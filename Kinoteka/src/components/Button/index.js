@@ -25,12 +25,12 @@ const Button = ({onClick, activeButton}) => {
     else if (activeButton === "watchNow") {
         buttonClassName = styles.watchNow
         buttonText = "gledaj sada"
-        buttonExtras = <PlayButton/>
+        buttonExtras = <FaPlayCircle className={styles.playCircle}/>
     }
     else if (activeButton === "watchNowBig") {
         buttonClassName = styles.watchNowBig
         buttonText = "gledaj sada"
-        buttonExtras = <FaPlayCircle size={30} className={styles.playCircle}/>
+        buttonExtras = <FaPlayCircle className={styles.playCircle}/>
     }
     else if (activeButton === "watchLater") {
         buttonClassName = styles.watchLater

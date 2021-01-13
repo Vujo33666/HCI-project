@@ -1,4 +1,9 @@
-export const navs = ['Naslovna', 'Kategorije', 'Forum', 'Prijava']
+export const navs = [
+    {tab: 'Naslovna', to: '/naslovna'},
+    {tab: 'Kategorije', to: '/kategorijeLanding'}, 
+    {tab: 'Forum', to: '/forumLanding'}, 
+    {tab: 'Prijava', to: '/prijavaRegistracija'}
+]
 
 export const cath = [
     'Akcijski',
