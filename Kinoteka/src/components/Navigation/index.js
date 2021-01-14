@@ -9,7 +9,9 @@ import SearchBar from '../SearchBar'
 const Navigation = ({activeTab, navigationBarWhere}) => (
   <section className={styles.navigation}>
     <div className={styles.navLogoSiteName}>
-        <Logo logoWhere='navigationLogo'/>
+        <Link to='/'>
+            <Logo logoWhere='navigationLogo'/>
+        </Link>
         <Link to='/'>
             <h2>KINOTEKA</h2>
         </Link>

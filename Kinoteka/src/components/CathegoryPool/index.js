@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import { Link } from 'gatsby'
 import styles from './style.module.css'
 import Button from '../Button'
 import {cath as cathegorys} from '../../constants/const'
@@ -19,7 +20,7 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
                         {textForIntro}
                     </div>
                     <div className={cathegoryPoolWhere === "landing" ? styles.selectedCathegoryNameHide : styles.selectedCathegoryName}>
-                        Akcijski
+                        akcijski
                     </div>
                 </div>
                 <Button
@@ -34,11 +35,13 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
 
                 {
                     cathegorys.map(
-                        tab =>  <li key={tab}
-                                    className={styles.cathegoryName}
-                                >
-                                        - {tab}
+                        tab => (
+                            <Link key={tab} to='/kategorije'>
+                                <li className={styles.cathegoryName}>
+                                    - {tab}
                                 </li>
+                            </Link>
+                        )
                     )
                 }
             </div>
