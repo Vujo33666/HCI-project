@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import styles from './style.module.css'
+import Logo from '../Logo'
 import SearchBar from '../SearchBar'
 import Quote from '../Quote'
 import Button from '../Button'
@@ -15,12 +16,8 @@ const Intro = ({activeIntro}) => {
 
     if (activeIntro === "landingIntro") {
         intro = <div className={styles.landingIntro}>
-                    <h1>
-                        <p>LOGO</p>
-                        <p>LOGO</p>
-                        <p>LOGO</p>
-                    </h1>
-                    <h2>KINOTEKA</h2>
+                    <Logo />
+                    <h1>KINOTEKA</h1>
                     <SearchBar searchBarWhere ="landing" />
                     <Quote 
                         active = "landingQuote"
