@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import styles from './style.module.css'
+import Logo from '../Logo'
 import NavigationBar from '../NavigationBar'
 import SearchBar from '../SearchBar'
 
@@ -9,7 +10,7 @@ const Navigation = ({activeTab, navigationBarWhere}) => (
   <section className={styles.navigation}>
     <div className={styles.navLogoSiteName}>
         <Link to='/'>
-            <h1>LOGO</h1>
+            <Logo logoWhere='navigationLogo'/>
         </Link>
         <Link to='/'>
             <h2>KINOTEKA</h2>

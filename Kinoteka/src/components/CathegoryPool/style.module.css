@@ -1,7 +1,7 @@
 .cathegoryPoolExpanded {
-    width: 70%;
+    width: 60%;
     height: fit-content;
-    margin: 0vh 15% 5vh 15%;
+    margin: 0vh 20% 5vh 20%;
 
     display: flex;
     flex-direction: column;
@@ -97,12 +97,20 @@
     display: none;
 }
 
-.cathegoryName {
+.cathegoryPool a {
     width: 25%;
     height: fit-content;
     padding: 0px;
     border: 0px;
     margin: 0px 0px 3vh 0px;
+}
+
+.cathegoryName {
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .cathegoryName:hover {

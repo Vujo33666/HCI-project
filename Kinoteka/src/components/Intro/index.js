@@ -2,12 +2,14 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import styles from './style.module.css'
+import Logo from '../Logo'
 import SearchBar from '../SearchBar'
 import Quote from '../Quote'
 import Button from '../Button'
 import CathegoryPool from '../CathegoryPool'
 import InfoTab from '../InfoTab'
 import UserLists from '../UserLists'
+import PrijavaForm from '../PrijavaForm'
 
 const Intro = ({activeIntro}) => {
     let introClassName = ''
@@ -15,12 +17,8 @@ const Intro = ({activeIntro}) => {
 
     if (activeIntro === "landingIntro") {
         intro = <div className={styles.landingIntro}>
-                    <h1>
-                        <p>LOGO</p>
-                        <p>LOGO</p>
-                        <p>LOGO</p>
-                    </h1>
-                    <h2>KINOTEKA</h2>
+                    <Logo />
+                    <h1>KINOTEKA</h1>
                     <SearchBar searchBarWhere ="landing" />
                     <Quote 
                         active = "landingQuote"
@@ -59,14 +57,7 @@ const Intro = ({activeIntro}) => {
     }
     else if (activeIntro === "prijavaRegistracija") {
         intro = <div className={styles.prijavaRegistracijaIntro}>
-                    <div className={styles.prijava}>
-                        <InfoTab text="Korisničko ime:"/>
-                        <InfoTab text="Lozinka:"/>
-                        <Button activeButton="signIn"/>
-                        <div className={styles.introMessageSignIn}>
-                            NEMATE RAČUN? REGISTRIRAJTE SE. *SMILEY FACE*
-                        </div>
-                    </div>
+                    <PrijavaForm />
                     <div className={styles.verticalLine} />
                     <div className={styles.registracija}>
                         <InfoTab text="Ime:"/>

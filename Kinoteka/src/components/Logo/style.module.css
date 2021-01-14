@@ -1,79 +1,203 @@
 .logo {
-    /* Logo */
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 18vh;
+    height: 18vh;
+    padding: 0%;
+    border:  0%;
+    margin: 10vh 0vw 3vh 0vw;
+
+    background:  rgba(255, 255, 255, 0);
 }
- 
 
-.logo .logoInside {
-    /* Rectangle 1 */
-    position: absolute;
-    left: 67%;
-    right: 13%;
-    top: 35%;
-    bottom: 35%;
-    background: rgba(212, 175, 55, 0.8);
+.logo2 {
+    position: relative;
+    width: 7vh;
+    height: 7vh;
+    padding: 0%;
+    border:  0%;
+    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
 
-    /* Line 5 (Stroke) */
-    position: absolute;
-    left: 64%;
-    right: 6%;
-    top: 35%;
-    bottom: 59%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(90deg);
+    background:  rgba(255, 255, 255, 0);
+}
 
-    /* Line 4 (Stroke) */
-    position: absolute;
-    left: 57%;
-    right: 23%;
-    top: 40%;
-    bottom: 54%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(90deg);
 
-    /* Line 3 (Stroke) */
-    position: absolute;
-    left: 50%;
-    right: 20%;
-    top: 35%;
-    bottom: 59%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(90deg);
 
-    /* Line 2 (Stroke) */
-    position: absolute;
-    left: 41%;
-    right: 29%;
-    top: 35%;
-    bottom: 59%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(90deg);
+.ellipse {
+    width: calc(100% - 2vh);
+    height: calc(100% - 2vh);
 
-    /* Polygon 1 */
     position: absolute;
-    left: 20.31%;
-    right: 49.04%;
-    top: 65.32%;
-    bottom: 22.99%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(-90deg);
-
-    /* Line 1 (Stroke) */
-    position: absolute;
-    left: 19%;
-    right: 51%;
-    top: 35%;
-    bottom: 59%;
-    background: rgba(212, 175, 55, 0.8);
-    transform: rotate(90deg);
-
-    /* Ellipse 1 (Stroke) */
-    position: absolute;
-    left: 0%;
-    right: 0%;
     top: 0%;
+    right: 0%;
     bottom: 0%;
-    background: rgba(212, 175, 55, 0.8);
+    left: 0%;
+
+    border-radius: 50%;
+    background:  rgba(255, 255, 255, 0);
+
+    border-style: solid;
+    border-width: 1vh;
+    border-color: rgba(212, 175, 55, 1);
+}
+.logo2 .ellipse {
+    width: calc(100% - 1vh);
+    height: calc(100% - 1vh);
+    border-width: 0.5vh;
+}
+
+
+
+.lineVertical1 {
+    height: 40%;
+    width: 7%;
+
+    position: absolute;
+    top: 30%;
+    right: 81%;
+    bottom: 70%;
+    left: 12%;
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 1vh;
+}
+.logo2 .lineVertical1 {
+    width: 6%;
+    right: 80%;
+    left: 14%;
+}
+
+.lineVertical2 {
+    height: 40%;
+    width: 7%;
+
+    position: absolute;
+    top: 30%;
+    right: 58%;
+    bottom: 70%;
+    left: 35%;
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 1vh;
+}
+.logo2 .lineVertical2 {
+    width: 6%;
+    right: 58%;
+    left: 36%;
+}
+
+.lineVertical3 {
+    height: 40%;
+    width: 7%;
+
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    bottom: 70%;
+    left: 43%;
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 1vh;
+}
+.logo2 .lineVertical3 {
+    width: 6%;
+    right: 50%;
+    left: 44%;
+}
+
+.lineVerticalSmall {
+    height: 30%;
+    width: 7%;
+
+    position: absolute;
+    top: 35%;
+    right: 42.5%;
+    bottom: 65%;
+    left: 50.5%;
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 1vh;
+}
+.logo2 .lineVerticalSmall {
+    width: 5%;
+    right: 44%;
+    left: 51%;
+}
+
+.lineVertical4 {
+    height: 40%;
+    width: 7%;
+
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    bottom: 70%;
+    left: 58%;
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 1vh;
+}
+.logo2 .lineVertical4 {
+    width: 6%;
+    right: 36%;
+    left: 58%;
+}
+
+.rectangle {
+    height: 40%;
+    width: 22%;
+
+    position: absolute;
+    top: 30%;
+    right: 12%;
+    bottom: 70%;
+    left: 66%;
+
+
+    background: rgba(212, 175, 55, 1);
+    border-radius: 2vh;
+}
+.logo2 .rectangle {
+    width: 20%;
+    right: 14%;
+    left: 66%;
+}
+
+.triangle {
+    position: absolute;
+    top: 42%;
+    right: 66%;
+    bottom: 60%;
+    left: 19.5%;
+
+    background-color: rgba(212, 175, 55, 1);
+    border: 0px;
+}
+.triangle:before,
+.triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+	width: 2.4vh;
+	height: 2.4vh;
+	border-top-left-radius: 1vh;
+}
+.logo2 .triangle,
+.logo2 .triangle:before,
+.logo2 .triangle:after {
+	width: 0.95vh;
+	height: 0.95vh;
+	border-top-left-radius: 0.4vh;
+}
+.triangle {
+	transform: rotate(-56deg) skew(-25deg);
+}
+.triangle:before {
+	transform: rotate(-90deg) skewX(45deg) translate(-50%,0);
+}
+.triangle:after {
+	transform: rotate(90deg) skewY(45deg) translate(0,-50%);
 }
