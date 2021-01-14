@@ -27,3 +27,8 @@ export const cath = [
     'Triler',
     'Vestern'
 ]
+
+export const users = [
+    {username: 'marko',     password: 'vujo'},
+    {username: 'pucko',     password: '1999'}
+]

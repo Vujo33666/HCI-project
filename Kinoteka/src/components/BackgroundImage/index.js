@@ -7,7 +7,6 @@ import styles from './style.module.css'
 import NavigationBar from '../NavigationBar'
 import Navigation from '../Navigation'
 import Intro from '../Intro'
-import PrijavaIntro from '../PrijavaIntro'
 
 const Background = ({activeTab, activeIntro}) => {
     const data = useStaticQuery(graphql`
@@ -36,21 +35,6 @@ const Background = ({activeTab, activeIntro}) => {
                         navigationBarWhere = "landing"
                     />
                     <Intro activeIntro={activeIntro}/>
-                </div>
-            </BackgroundImage>
-    }
-    else if (activeIntro === "prijavaRegistracija") {
-        intro =
-            <BackgroundImage
-                className={styles.background}
-                fluid={data.desktop.childImageSharp.fluid}
-            >
-                <div>
-                    <Navigation 
-                        activeTab={activeTab}
-                        navigationBarWhere = "navigation"
-                    />
-                    <PrijavaIntro />
                 </div>
             </BackgroundImage>
     }

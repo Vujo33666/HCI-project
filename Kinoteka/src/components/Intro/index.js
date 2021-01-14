@@ -9,6 +9,7 @@ import Button from '../Button'
 import CathegoryPool from '../CathegoryPool'
 import InfoTab from '../InfoTab'
 import UserLists from '../UserLists'
+import PrijavaForm from '../PrijavaForm'
 
 const Intro = ({activeIntro}) => {
     let introClassName = ''
@@ -56,14 +57,7 @@ const Intro = ({activeIntro}) => {
     }
     else if (activeIntro === "prijavaRegistracija") {
         intro = <div className={styles.prijavaRegistracijaIntro}>
-                    <div className={styles.prijava}>
-                        <InfoTab text="Korisničko ime:"/>
-                        <InfoTab text="Lozinka:"/>
-                        <Button activeButton="signIn"/>
-                        <div className={styles.introMessageSignIn}>
-                            NEMATE RAČUN? REGISTRIRAJTE SE. *SMILEY FACE*
-                        </div>
-                    </div>
+                    <PrijavaForm />
                     <div className={styles.verticalLine} />
                     <div className={styles.registracija}>
                         <InfoTab text="Ime:"/>
