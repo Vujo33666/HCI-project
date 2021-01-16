@@ -3,6 +3,8 @@ import React from 'react'
 import styles from './style.module.css'
 import { FaGithub } from "react-icons/fa"
 
+import { Link } from 'gatsby'
+
 const firstFooterText = `
     Kinoteka je besplatna stranica za stremanje filmova gdje možete bez prijave gledati filmove.`
 
@@ -11,8 +13,10 @@ const secondFooterText = `
 
 const Footer = () => (
     <footer className={styles.footer}>
-        <div className={styles.logo}>
-            LOGO
+        <div className={styles.logo} >
+            <Link to="/">
+                <div className={styles.logoImage}></div>
+            </Link>
         </div>
         <div className={styles.verticalLine}/>
         <div className={styles.aboutText}>
