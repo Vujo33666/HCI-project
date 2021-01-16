@@ -1,6 +1,18 @@
 import React, { useState } from 'react'
 
 import styles from './style.module.css'
+/*import firebase from "gatsby-plugin-firebase"
+const db = firebase.firestore();
+
+
+
+db.collection("banner").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        
+        console.log(doc.id, " => ", doc.data());
+    });
+}); */
+
 
 const ScrollBar = () => {
     const [isChosen, setChosen] = useState(1);
