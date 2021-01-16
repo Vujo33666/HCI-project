@@ -7,3 +7,5 @@
 // You can delete this file if you're not using it
 
 import './src/global/global.css'
+import "firebase/auth"
+import "firebase/firestore"
