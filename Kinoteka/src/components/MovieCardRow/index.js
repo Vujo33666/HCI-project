@@ -15,9 +15,6 @@ function createMovieCard(obj){
     );
 }
 
-function getClickedId(id){
-    console.log(id);
-}
 
 const MovieCardRow = (props) => (
     <div onClick = {props.onClick}
@@ -33,8 +30,7 @@ const MovieCardRow = (props) => (
                     id={obj.id}
                     name={obj.name}
                     img={obj.image}
-                    //clickedMovie={props.clickedMovie}
-                    clickedMovie={(id)=>props.clickedMovie(id)}
+                    clickedMovie={(objProp)=>props.clickedMovie(objProp)}
                     />
                 );
            })

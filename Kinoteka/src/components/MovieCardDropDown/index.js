@@ -1,15 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 import { Link } from 'gatsby'
 import styles from './style.module.css'
 import Rate from '../Rate'
 import Button from '../Button'
 
-const MovieCardDropDown = ({active}) => (
-    <div className={active === true ? styles.dropDown : styles.dropDownHide}>
+import actionMovies from "../../firebase/getAction.js"
+
+const MovieCardDropDown = (props) => {
+
+    return (
+    <div className={props.active === true ? styles.dropDown : styles.dropDownHide}>
         <div className={styles.description}>
             <li className={styles.movieDescription}>
-                Movie Description...
+                {props.currentMovie.name}
             </li>
             <div className={styles.buttons}>
                 <Link to='/gledajFilm'>
@@ -25,6 +29,7 @@ const MovieCardDropDown = ({active}) => (
             <Rate text="Ocjenite Sami"/>
         </div>
     </div>
-)
+    )
+}
 
 export default MovieCardDropDown

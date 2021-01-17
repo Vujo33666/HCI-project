@@ -7,11 +7,10 @@ import Quote from '../../components/Quote'
 
 const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
     const [isActive, setValue] = useState(true);
-    const [movie,setMovie]=useState("");
+    const [movie,setMovie]=useState({});
 
     function setMovieDetails(movie){
-        //dobijemo detalje od movieCard-a pa movieCardRow-a
-        console.log(" u setu smo " + movie);
+        setMovie(movie);
     }
 
     return (
@@ -27,6 +26,7 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
             />
             <MovieCardDropDown
                 active = {!isActive}
+                currentMovie={movie}
             />
         </div>
     )

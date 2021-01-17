@@ -19,7 +19,7 @@ const MovieCard = (props) => {
         <div style={{
             backgroundImage: `url(${props.img})`}}
             className={styles.card}
-            onClick={()=>{return props.clickedMovie(props.id)}}>
+            onClick={()=>{return props.clickedMovie(props)}}>
             {<li>
                 {props.name}
                 
