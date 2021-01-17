@@ -25,8 +25,8 @@ const MovieCardDropDown = (props) => {
             </div>
         </div>
         <div className={styles.rating}>
-            <Rate text="Ocjene Korisnika"/>
-            <Rate text="IMDB Ocjena"/>
+            <Rate ocjene_korisnika={props.currentMovie.ocjene_korisnika} text="Ocjene Korisnika"/>
+            <Rate ocjene_imbd={props.currentMovie.ocjene_imbd} text="IMDB Ocjena"/>
             <Rate text="Ocjenite Sami"/>
         </div>
     </div>

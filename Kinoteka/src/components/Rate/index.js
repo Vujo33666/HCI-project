@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styles from './style.module.css'
 import { FaStar } from "react-icons/fa"
 
-const Rate = ({text}) => {
+const Rate = (props) => {
     const [rating, setRating] = useState(null)
 
     return (
@@ -12,7 +12,7 @@ const Rate = ({text}) => {
                 {[...Array(5)].map((star, i) => {
                     const ratingValue = i + 1;
 
-                    if (text === "Ocjenite Sami") {
+                    if (props.text === "Ocjenite Sami") {
 
                         return (
                             <FaStar 
@@ -21,18 +21,25 @@ const Rate = ({text}) => {
                                 onClick={() => setRating(rating === ratingValue ? null : ratingValue)}
                             />
                         )
-                    }
+                    }else if(props.text === "Ocjene Korisnika"){
+                        return (
+                            <FaStar 
+                                key={ratingValue}
+                                className={ratingValue <= props.ocjene_korisnika ? styles.active : styles.notActive2}
+                            />
+                        )
+                    }//sljedece su ocjene imbd
                     else {
                         return (
                             <FaStar 
                                 key={ratingValue}
-                                className={styles.notActive2}
+                                className={ratingValue <= props.ocjene_imbd ? styles.active : styles.notActive2}
                             />
                         )
                     }
                 })}
             </li>
-            <li className={styles.text}>{text}</li>
+            <li className={styles.text}>{props.text}</li>
         </div>
     )
 }

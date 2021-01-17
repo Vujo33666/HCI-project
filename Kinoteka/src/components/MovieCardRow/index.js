@@ -20,8 +20,7 @@ function createMovieCard(obj){
 const MovieCardRow = (props) => (
     <div onClick = {props.onClick}
          className={styles.row}
-    >
-       {/*{actionMovies.map(createMovieCard)} */} 
+    > 
        {
            actionMovies.map((obj)=>{
             return(
@@ -31,6 +30,8 @@ const MovieCardRow = (props) => (
                     name={obj.name}
                     img={obj.image}
                     banner={obj.banner}
+                    ocjene_korisnika={obj.ocjene_korisnika}
+                    ocjene_imbd={obj.ocjene_imbd}
                     clickedMovie={(objProp)=>props.clickedMovie(objProp)}
                     />
                 );
