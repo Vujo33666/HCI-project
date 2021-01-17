@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from './style.module.css'
 import MovieCard  from '../MovieCard'
-import {movieNames,moviePictures} from "../../firebase/getBanner.js"
+
 import actionMovies from "../../firebase/getAction.js"
 
 function createMovieCard(obj){
@@ -14,11 +14,31 @@ function createMovieCard(obj){
         />
     );
 }
-const MovieCardRow = ({onClick}) => (
-    <div onClick = {onClick}
+
+function getClickedId(id){
+    console.log(id);
+}
+
+const MovieCardRow = (props) => (
+    <div onClick = {props.onClick}
          className={styles.row}
     >
-        {actionMovies.map(createMovieCard)}
+       {/*{actionMovies.map(createMovieCard)} */} 
+       {
+           actionMovies.map((obj)=>{
+            {console.log(props.clickedMovie)}
+            return(
+                <MovieCard 
+                    key={obj.id}
+                    id={obj.id}
+                    name={obj.name}
+                    img={obj.image}
+                    //clickedMovie={props.clickedMovie}
+                    clickedMovie={(id)=>props.clickedMovie(id)}
+                    />
+                );
+           })
+       }
     </div>
 )
 

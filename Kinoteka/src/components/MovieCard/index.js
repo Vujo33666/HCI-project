@@ -2,7 +2,6 @@ import React from "react"
 
 import styles from './style.module.css'
 import firebase from "gatsby-plugin-firebase"
-import {movieNames,moviePictures} from "../../firebase/getBanner.js"
 
 
 /*const MovieCard = ({movieCardWhere}) => {
@@ -19,9 +18,11 @@ const MovieCard = (props) => {
     return(
         <div style={{
             backgroundImage: `url(${props.img})`}}
-            className={styles.card}>
+            className={styles.card}
+            onClick={()=>{return props.clickedMovie(props.id)}}>
             {<li>
                 {props.name}
+                
             </li>}
             
         </div>

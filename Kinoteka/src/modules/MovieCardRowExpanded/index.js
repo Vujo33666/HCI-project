@@ -7,11 +7,18 @@ import Quote from '../../components/Quote'
 
 const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
     const [isActive, setValue] = useState(true);
+    const [movie,setMovie]=useState("");
+
+    function setMovieDetails(movie){
+        //dobijemo detalje od movieCard-a pa movieCardRow-a
+        console.log(" u setu smo " + movie);
+    }
 
     return (
         <div className={styles.pool}>
             <MovieCardRow
                 onClick = {() => setValue(!isActive)}
+                clickedMovie={setMovieDetails}
             />
             <Quote
                 active = {isActive}
