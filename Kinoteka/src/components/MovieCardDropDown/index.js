@@ -11,7 +11,8 @@ const MovieCardDropDown = (props) => {
 
     return (
     <div className={props.active === true ? styles.dropDown : styles.dropDownHide}>
-        <div className={styles.description}>
+        <div className={styles.description} style={{
+            backgroundImage: `url(${props.currentMovie.banner})`}}>
             <li className={styles.movieDescription}>
                 {props.currentMovie.name}
             </li>

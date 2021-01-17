@@ -11,6 +11,7 @@ function createMovieCard(obj){
         key={obj.id}
         name={obj.name}
         img={obj.image}
+        banner={obj.banner}
         />
     );
 }
@@ -23,13 +24,13 @@ const MovieCardRow = (props) => (
        {/*{actionMovies.map(createMovieCard)} */} 
        {
            actionMovies.map((obj)=>{
-            {console.log(props.clickedMovie)}
             return(
                 <MovieCard 
                     key={obj.id}
                     id={obj.id}
                     name={obj.name}
                     img={obj.image}
+                    banner={obj.banner}
                     clickedMovie={(objProp)=>props.clickedMovie(objProp)}
                     />
                 );
