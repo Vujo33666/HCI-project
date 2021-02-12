@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from "gatsby"
@@ -9,11 +9,22 @@ import Navigation from '../Navigation'
 import Rate from '../Rate'
 import Button from '../Button'
 import ScrollBar from '../ScrollBar'
+import {movieNames,moviePictures} from "../../firebase/getBanner";
+
 
 const Baner = ({activeTab, navigationBarWhere}) => {
+
+    const [movie,setMovie] = useState("Deadpool");
+    const [moviePic,setPicture] = useState("https://firebasestorage.googleapis.com/v0/b/kinotekahci.appspot.com/o/DEADPOOL%20BANNER.jpg?alt=media&token=0ee492ee-8c75-4cc0-8179-198b270e3d1f")
+
+     function checkedMovie (checkedBar){
+        setMovie(movieNames[checkedBar-1]);
+        setPicture(moviePictures[checkedBar-1]);
+    }
+
     const data = useStaticQuery(graphql`
     query {
-        desktop: file(relativePath: { eq: "JOJO_RABBIT_BANER.jpg" }) {
+        desktop: file(relativePath: { eq: "DEADPOOL BANNER.jpg" }) {
             childImageSharp {
                 fluid(quality: 100, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
@@ -28,11 +39,13 @@ const Baner = ({activeTab, navigationBarWhere}) => {
           className={styles.baner}
           fluid={data.desktop.childImageSharp.fluid}
         >
-            <div className={styles.banerBackground}>
+            <div className={styles.banerBackground}
+            style={{
+            backgroundImage: `url(${moviePic})`}}>
                 <Navigation activeTab={activeTab} navigationBarWhere={navigationBarWhere}/>
                 <section className={styles.movieInfo}>
                     <ul className={styles.movieName}>
-                        movie Name
+                        {movie}
                     </ul>
                     <ul className={styles.movieCathegory}>
                         movie Cathegory
@@ -50,7 +63,7 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         </Link>
                     </ul>
                     <ul  className={styles.banerScroll}>
-                        <ScrollBar />
+                        <ScrollBar onChecked={checkedMovie}/>
                     </ul>
                     <ul  className={styles.banerBodySeparator}>
                         popularni
