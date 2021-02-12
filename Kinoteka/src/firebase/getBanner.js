@@ -5,6 +5,7 @@ const movieNames=[];
 const moviePictures=[];
 const movieRating=[];
 const movieImbdRating=[];
+const movieObj=[];
 
 db.collection("banner").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
@@ -12,8 +13,9 @@ db.collection("banner").get().then(function(querySnapshot) {
         moviePictures.push(doc.data().image);
         movieRating.push(doc.data().ocjene_korisnika);
         movieImbdRating.push(doc.data().ocjene_imbd);
+        movieObj.push(doc.data());
     });
 
 });
 
-export {movieNames,moviePictures,movieRating,movieImbdRating};
+export {movieObj,movieNames,moviePictures,movieRating,movieImbdRating};
