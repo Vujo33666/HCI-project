@@ -10,7 +10,7 @@ const PrijavaForm = () => (
         <InfoTab text="Lozinka:"/>
         <Button activeButton="signIn"/>
         <div className={styles.introMessageSignIn}>
-            NEMATE RAČUN? REGISTRIRAJTE SE. *SMILEY FACE*
+            NEMATE RAČUN? REGISTRIRAJTE SE 😊
         </div>
     </div>
 )

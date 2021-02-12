@@ -25,11 +25,11 @@ const Footer = () => (
             <ul className={styles.makers}>
                 <li>
                     <FaGithub size={18} className={styles.gitLogo}/>
-                    NediljkoIvisic
+                    <a href="https://github.com/NediljkoIvisic" target="_blank">NediljkoIvisic</a>
                 </li>
                 <li>
                     <FaGithub size={18} className={styles.gitLogo}/>
-                    Vujo33666
+                    <a href="https://github.com/Vujo33666" target="_blank">Vujo33666</a>
                 </li>
             </ul>
         </div>
