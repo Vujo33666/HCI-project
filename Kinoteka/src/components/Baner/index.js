@@ -24,7 +24,7 @@ const Baner = ({activeTab, navigationBarWhere}) => {
 
     const data = useStaticQuery(graphql`
     query {
-        desktop: file(relativePath: { eq: "DEADPOOL BANNER.jpg" }) {
+        desktop: file(relativePath: { eq: "kino.jpg" }) {
             childImageSharp {
                 fluid(quality: 100, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid
