@@ -67,7 +67,8 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         <Rate ocjene_imbd={imbdRating} text="IMDB Ocjena"/>
                     </ul>
                     <ul  className={styles.watchNow}>
-                        <Link to='/gledajFilm'>
+                        <Link link={movieObj}
+                            to='/gledajFilm'>
                             <Button activeButton = "watchNowBig"/>
                         </Link>
                     </ul>
