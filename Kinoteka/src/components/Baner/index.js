@@ -9,17 +9,21 @@ import Navigation from '../Navigation'
 import Rate from '../Rate'
 import Button from '../Button'
 import ScrollBar from '../ScrollBar'
-import {movieNames,moviePictures} from "../../firebase/getBanner";
+import {movieNames,moviePictures,movieRating,movieImbdRating} from "../../firebase/getBanner";
 
 
 const Baner = ({activeTab, navigationBarWhere}) => {
 
     const [movie,setMovie] = useState("Deadpool");
-    const [moviePic,setPicture] = useState("https://firebasestorage.googleapis.com/v0/b/kinotekahci.appspot.com/o/DEADPOOL%20BANNER.jpg?alt=media&token=0ee492ee-8c75-4cc0-8179-198b270e3d1f")
+    const [moviePic,setPicture] = useState("https://firebasestorage.googleapis.com/v0/b/kinotekahci.appspot.com/o/DEADPOOL%20BANNER.jpg?alt=media&token=0ee492ee-8c75-4cc0-8179-198b270e3d1f");
+    const [movieUserRating,setRating] = useState(3);
+    const [imbdRating,setImbdRating] = useState(4);
 
      function checkedMovie (checkedBar){
         setMovie(movieNames[checkedBar-1]);
         setPicture(moviePictures[checkedBar-1]);
+        setRating(movieRating[checkedBar-1]);
+        setImbdRating(movieImbdRating[checkedBar-1]);
     }
 
     const data = useStaticQuery(graphql`
@@ -54,8 +58,8 @@ const Baner = ({activeTab, navigationBarWhere}) => {
                         1 movie 1 duration
                     </ul>
                     <ul className={styles.movieRating}>
-                        <Rate text="Ocjene Korisnika"/>
-                        <Rate text="IMDB Ocjena"/>
+                        <Rate ocjene_korisnika={movieUserRating} text="Ocjene Korisnika"/>
+                        <Rate ocjene_imbd={imbdRating} text="IMDB Ocjena"/>
                     </ul>
                     <ul  className={styles.watchNow}>
                         <Link to='/gledajFilm'>
