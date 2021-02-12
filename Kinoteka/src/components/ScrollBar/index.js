@@ -26,7 +26,10 @@ const ScrollBar = (props) => {
                 return (
                     <li key={chosenValue}
                         className={chosenValue === isChosen ? styles.active : styles.notActive}
-                        onClick={() => props.onChecked(chosenValue)}
+                        onClick={() => {
+                            setChosen(chosenValue);
+                            return props.onChecked(chosenValue);
+                        }}
                         
                     />
                 )
