@@ -6,6 +6,7 @@ import Rate from '../Rate'
 import Button from '../Button'
 
 import actionMovies from "../../firebase/getAction.js"
+import { movieObj } from '../../firebase/getBanner'
 
 const MovieCardDropDown = (props) => {
 
