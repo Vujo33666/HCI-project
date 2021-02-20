@@ -35,7 +35,7 @@ const Intro = ({activeIntro}) => {
     else if (activeIntro === "forumIntro") {
         intro = <div className={styles.forumIntro}>
                     <div className={styles.forumLandingMessage1}>
-                        { 'DOBRODOŠLI NA KINOTEKIN FORUM.\n*SMILEY FACE*' }
+                        { 'DOBRODOŠLI NA KINOTEKIN FORUM.\n😊' }
                     </div>
                     <div className={styles.forumLandingMessage2}>
                         PRIJAVITE SE DA BUDETE NJEGOV DIO.
