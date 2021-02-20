@@ -127,3 +127,11 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px){
+
+    .movieInfo .movieName {
+        font-size: 3vh;
+    }
+
+}

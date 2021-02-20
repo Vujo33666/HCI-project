@@ -30,3 +30,15 @@
 .infoTab .inputField:hover {
     cursor: text;
 }
+
+@media screen and (max-width: 768px){
+
+    .infoTab {
+        font-size: 1rem;
+    }
+    .infoTab .inputField {
+        width: 50%;
+        height: 100%;
+    }
+
+}

@@ -291,3 +291,18 @@
     background: rgba(212, 175, 55, 0.5);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px){
+
+    .signInUp {
+        width: fit-content;
+        height: fit-content;
+        padding: 20px 25px;
+        margin: 0px;
+        border: 0px;    
+            
+        list-style: none;
+        font-size: 1rem;
+    }
+
+}
