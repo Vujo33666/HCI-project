@@ -69,7 +69,7 @@
 }
 .baner .movieInfo .banerBodySeparator{
     width: 100%;
-    padding: 0vh 0vw 5vh 0vw;
+    padding: 5vh 0vw 5vh 0vw;
     border: 0px;
     margin: 0%;
 
@@ -86,4 +86,15 @@
     );
 }
 
-/*need to add RWI */
+@media screen and (max-width: 768px){
+
+    .baner{
+        height: 80%;
+    }
+
+    .baner .banerBackground {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
