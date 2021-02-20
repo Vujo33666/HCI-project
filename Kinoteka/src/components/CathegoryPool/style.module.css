@@ -121,3 +121,29 @@
     width: 8vh;
     height: 8vh;
 }
+
+
+@media screen and (max-width: 768px){
+
+    .selectedCathegory {
+        width: 100%;
+        height: fit-content;
+        font-size: 2rem;
+        margin-top: 10%;
+    }
+
+    .cathegoryPool {
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .cathegoryPoolLandingExpanded {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+}
