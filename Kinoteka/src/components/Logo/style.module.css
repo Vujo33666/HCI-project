@@ -201,3 +201,11 @@
 .triangle:after {
 	transform: rotate(90deg) skewY(45deg) translate(0,-50%);
 }
+
+@media screen and (max-width:768px){
+    .logo {
+        width: 180px;
+        height: 180px;
+        margin: 10vh 0vw 3vh 0vw;
+    }
+}
