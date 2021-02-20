@@ -86,6 +86,22 @@
     font-size: 2vh;
   }
 
+  .navigationBarNav { 
+    width: 100%;
+  }
+
+  .navigationBarNav .active, .navLiTab, .navLiTab:hover{
+    width: 110%;
+  }
+
+  .active {
+    color: rgba(0,0,0);
+    background: rgba(212, 175, 55, 0.8);
+    border-radius: 1vh;
+    cursor: pointer;
+    width: 110%;
+  }
+
 }
 
 @media screen and (max-width: 520px){

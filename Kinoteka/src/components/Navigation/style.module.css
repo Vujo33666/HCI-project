@@ -59,3 +59,23 @@
     text-transform: uppercase;
     color: rgba(212, 175, 55, 1);
 }
+
+@media screen and (max-width:768px){
+
+    .navigation {
+        width: 100%;
+        height: 8vh;
+        padding-bottom: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navigation .navLogoSiteName {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+}
