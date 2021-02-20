@@ -75,3 +75,14 @@
     width: 30%;
     height: 100%;
 }
+
+@media screen and (max-width: 768px){
+
+    .dropDown {
+        width: 95%;
+        height: 22.5vh;
+        padding: 2.5%;
+        margin: 0vh 0vw 5vh 0vw;
+    }
+
+}

@@ -99,3 +99,35 @@
 .makers .gitLogo{
     margin-right: 5px;
 }
+
+@media screen and (max-width: 768px){
+
+    .footer {
+        width: 98%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer .aboutText ul {
+        font-size: 1rem;
+        font-family: "Righteous";
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .aboutText .makers {
+        width: 60%;
+        margin: 0% 30% 0% 30%;
+    
+        display: flex;
+        justify-content: space-evenly;
+          
+        font-size: 0.8rem;
+    }
+
+}
