@@ -11,3 +11,12 @@
 
     background: rgba(16,16,16);
 }
+
+@media screen and (max-width: 768px){
+
+    .pool{
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+    }
+
+}
