@@ -129,7 +129,7 @@
         width: 100%;
         height: fit-content;
         font-size: 2rem;
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .cathegoryPool {
@@ -144,6 +144,25 @@
         height: fit-content;
         display: flex;
         justify-content: center;
+    }
+
+    .cathegoryPoolExpanded {
+        width: 60%;
+        height: auto;
+        padding-top: 150px;
+    }
+
+    .selectedCathegoryMessage {
+        font-size: 1.2rem;
+    }
+    
+    .selectedCathegoryName {
+        font-size: 1.2rem;
+    }
+
+    .cathegoryPoolExpanded .selectedCathegoryWithButton Button {
+        width: 50px;
+        height: 50px;
     }
 
 }
