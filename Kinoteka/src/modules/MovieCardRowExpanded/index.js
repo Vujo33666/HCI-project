@@ -6,7 +6,7 @@ import MovieCardDropDown from "../../components/MovieCardDropDown"
 import Quote from '../../components/Quote'
 
 const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
-    const [isActive, setValue] = useState(true);
+    const [isActive, setValue] = useState(false);
     const [movie,setMovie]=useState({});
 
     function setMovieDetails(movie){
@@ -16,16 +16,16 @@ const MovieCardRowExpanded = ({quoteText, quoteBy}) => {
     return (
         <div className={styles.pool}>
             <MovieCardRow
-                onClick = {() => setValue(!isActive)}
+                onClick = {() => setValue(true)}
                 clickedMovie={setMovieDetails}
             />
             <Quote
-                active = {isActive}
+                active = {!isActive}
                 quoteText = {quoteText}
                 quoteBy = {quoteBy}
             />
             <MovieCardDropDown
-                active = {!isActive}
+                active = {isActive}
                 currentMovie={movie}
             />
         </div>
