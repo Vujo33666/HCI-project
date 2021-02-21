@@ -134,4 +134,12 @@
         font-size: 3vh;
     }
 
+    .playMovieBody {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 180px;
+    }
+
 }
