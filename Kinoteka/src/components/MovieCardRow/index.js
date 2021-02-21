@@ -4,6 +4,7 @@ import styles from './style.module.css'
 import MovieCard  from '../MovieCard'
 
 import actionMovies from "../../firebase/getAction.js"
+import comedyMovies from "../../firebase/getComedy.js"
 
 function createMovieCard(obj){
     return(

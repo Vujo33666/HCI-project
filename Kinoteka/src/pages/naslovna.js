@@ -8,10 +8,12 @@ const NaslovnaPage = () => (
         <MovieCardRowExpanded
             quoteText = "Happines can be found even in the darkest of times, if one only remembers to turn on the light."
             quoteBy = "- Dumbledore"
+            rowNumber= "1"
         />
         <MovieCardRowExpanded
             quoteText = "Frankly my dear, I don't give a damn."
             quoteBy = "- Rhett Butler"
+            rowNumber="2"
         />
     </BanerFooterLayout>
 )
