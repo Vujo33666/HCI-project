@@ -17,7 +17,7 @@ function createMovieCard(obj){
     );
 }
 
-
+/* dodati ... if -> props.rownumber 1 || 2 te prikazivati action ili comedy movies */
 const MovieCardRow = (props) => (
     <div onClick = {props.onClick}
          className={styles.row}
