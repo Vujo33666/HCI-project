@@ -58,3 +58,21 @@
     color: rgba(212, 175, 55);
 }
 
+@media screen and (max-width: 768px){
+
+    .quotePlay {
+        width: 95%;
+        height: fit-content;
+        padding: 3%;
+        margin: 0vh 0vw 5vh 0vw;
+    
+        background: rgba(212, 175, 55, 0.8);
+        border-radius: 2vh;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
