@@ -7,9 +7,14 @@ import {cath as cathegorys} from '../../constants/const'
 
 const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
     const [isActive, setValue] = useState(false);
+    const [movie,setMovie] = useState("akcijski");
 
     const handleMouseClick = () => {
         setValue(!isActive)
+    }
+
+    const settingMovieCategory=()=>{
+        setMovie(movie);
     }
 
     return (
@@ -20,7 +25,7 @@ const CathegoryPool = ({cathegoryPoolWhere, textForIntro}) => {
                         {textForIntro}
                     </div>
                     <div className={cathegoryPoolWhere === "landing" ? styles.selectedCathegoryNameHide : styles.selectedCathegoryName}>
-                        akcijski
+                        {movie}
                     </div>
                 </div>
                 <Button
