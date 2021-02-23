@@ -23,7 +23,20 @@ const MovieCardRow = (props) => (
          className={styles.row}
     > 
        {
-           actionMovies.map((obj)=>{
+           props.rowNumber == "1" ? actionMovies.map((obj)=>{
+            return(
+                <MovieCard 
+                    key={obj.id}
+                    id={obj.id}
+                    name={obj.name}
+                    img={obj.image}
+                    banner={obj.banner}
+                    ocjene_korisnika={obj.ocjene_korisnika}
+                    ocjene_imbd={obj.ocjene_imbd}
+                    clickedMovie={(objProp)=>props.clickedMovie(objProp)}
+                    />
+                );
+           }) : comedyMovies.map((obj)=>{
             return(
                 <MovieCard 
                     key={obj.id}
@@ -37,6 +50,7 @@ const MovieCardRow = (props) => (
                     />
                 );
            })
+
        }
     </div>
 )
