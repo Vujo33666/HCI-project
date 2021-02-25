@@ -91,7 +91,7 @@
   }
 
   .navigationBarNav .active, .navLiTab, .navLiTab:hover{
-    width: 110%;
+    width: 100%;
   }
 
   .active {
@@ -99,7 +99,11 @@
     background: rgba(212, 175, 55, 0.8);
     border-radius: 1vh;
     cursor: pointer;
-    width: 110%;
+    width: 100%;
+  }
+
+  .navigationBar .navLiTab{
+    width: 100%;
   }
 
 }
