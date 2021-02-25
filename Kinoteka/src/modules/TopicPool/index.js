@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Link } from 'gatsby'
 import styles from './style.module.css'
 import DiscussionTab from '../../components/DiscussionTab'
 import ContentSeparator from '../../components/ContentSeparator'
@@ -21,7 +22,10 @@ const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
                         <DiscussionTab topicText="rasprava 1" />
                         <DiscussionTab topicText="rasprava 2" />
                         <DiscussionTab topicText="rasprava 3" />
-                        <Button activeButton="readMore" />
+                        <Link 
+                            to='/forumTema'>
+                            <Button activeButton="readMore" />
+                        </Link>
                     </div>
                 </div>
     }
