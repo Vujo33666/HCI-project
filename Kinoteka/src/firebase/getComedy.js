@@ -1,4 +1,5 @@
 import firebase from "gatsby-plugin-firebase"
+
 const db = firebase.firestore();
 
 const comedyMovies=[];

@@ -91,7 +91,7 @@
   }
 
   .navigationBarNav .active, .navLiTab, .navLiTab:hover{
-    width: 100%;
+    width: 110%;
   }
 
   .active {
@@ -102,9 +102,6 @@
     width: 100%;
   }
 
-  .navigationBar .navLiTab{
-    width: 100%;
-  }
 
 }
 

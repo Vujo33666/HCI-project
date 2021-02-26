@@ -60,12 +60,12 @@
     color: rgba(212, 175, 55, 1);
 }
 
-.navigation .navLogoSiteName a {
-    height: fit-content;
-    width: fit-content;
-}
-
 @media screen and (max-width:768px){
+
+    .navigation .navLogoSiteName a {
+        height: fit-content;
+        width: fit-content;
+    }
 
     .navigation {
         width: 100%;

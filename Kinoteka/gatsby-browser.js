@@ -8,4 +8,5 @@
 
 import './src/global/global.css'
 import "firebase/auth"
+import "firebase/app"
 import "firebase/firestore"

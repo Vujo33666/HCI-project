@@ -1,8 +1,7 @@
 .cathegoryPoolExpanded {
     width: 60%;
     height: fit-content;
-    margin: 0vh 20% 5vh 20%;
-
+    /*margin: 0vh 20% 5vh 20%; */
     display: flex;
     flex-direction: column;
  
@@ -16,8 +15,6 @@
 .cathegoryPoolLandingExpanded {
     width: 70%;
     height: fit-content;
-
-    margin: 0vh calc(50% - 350px) 5vh calc(50% - 350px);
 
     display: flex;
     flex-direction: column;
@@ -133,7 +130,8 @@
     }
 
     .cathegoryPool {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         height: fit-content;
         padding: 0px;
         font-size: 1rem;
@@ -147,9 +145,11 @@
     }
 
     .cathegoryPoolExpanded {
-        width: 60%;
+        width: 90%;
+        margin: auto;
         height: auto;
         padding-top: 150px;
+        padding-bottom: 50px;
     }
 
     .selectedCathegoryMessage {

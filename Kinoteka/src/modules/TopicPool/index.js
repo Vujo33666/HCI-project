@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Link } from 'gatsby'
 import styles from './style.module.css'
 import DiscussionTab from '../../components/DiscussionTab'
 import ContentSeparator from '../../components/ContentSeparator'
@@ -18,14 +17,12 @@ const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
                             active="playMovie"
                             quoteText={quoteText}
                             quoteBy={quoteBy}
-                        />
+                        /><div className={styles.discTab}>
                         <DiscussionTab topicText="rasprava 1" />
                         <DiscussionTab topicText="rasprava 2" />
                         <DiscussionTab topicText="rasprava 3" />
-                        <Link 
-                            to='/forumTema'>
-                            <Button activeButton="readMore" />
-                        </Link>
+                        </div>
+                        <Button activeButton="readMore" />
                     </div>
                 </div>
     }
