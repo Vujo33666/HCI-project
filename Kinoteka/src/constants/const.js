@@ -1,7 +1,7 @@
 export const navs = [
     {tab: 'Naslovna', to: '/naslovna'},
     {tab: 'Kategorije', to: '/kategorijeLanding'}, 
-    {tab: 'Forum', to: '/forumLanding'}, 
+    {tab: 'Forum', to: '/forum'}, 
     {tab: 'Prijava', to: '/prijavaRegistracija'}
 ]
 

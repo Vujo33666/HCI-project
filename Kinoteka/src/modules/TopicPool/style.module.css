@@ -26,3 +26,7 @@
     flex-direction: column;
     align-items: flex-end;
 }
+
+.discTab{
+    width: 100%;
+}

@@ -17,10 +17,11 @@ const TopicPool = ({topicPoolWhere, separatorText, quoteText, quoteBy}) => {
                             active="playMovie"
                             quoteText={quoteText}
                             quoteBy={quoteBy}
-                        />
+                        /><div className={styles.discTab}>
                         <DiscussionTab topicText="rasprava 1" />
                         <DiscussionTab topicText="rasprava 2" />
                         <DiscussionTab topicText="rasprava 3" />
+                        </div>
                         <Button activeButton="readMore" />
                     </div>
                 </div>

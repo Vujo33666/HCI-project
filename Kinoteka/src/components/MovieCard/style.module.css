@@ -33,7 +33,7 @@
 .card:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #d4af37;
+    border: 0px solid #d4af37;
     background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
